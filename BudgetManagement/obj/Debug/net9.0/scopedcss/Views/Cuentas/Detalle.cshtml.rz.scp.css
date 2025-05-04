@@ -1,0 +1,19 @@
+.contenedor-totales[b-s6zf9cvlfp] {
+    display: flex;
+    justify-content: space-around;
+    font-size: 26px;
+    text-align: center;
+}
+
+.dias-transaccion[b-s6zf9cvlfp] {
+    background-color: lightblue; 
+    font-size: 26px;
+}
+
+.activo[b-s6zf9cvlfp] {
+    color: blue;
+}
+
+.pasivo[b-s6zf9cvlfp] {
+    color: red;
+}
