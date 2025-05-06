@@ -60,6 +60,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/Views/Shared/_NavegarPorMeses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19OYXZlZ2FyUG9yTWVzZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/Views/Shared/_ResumenMontos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19SZXN1bWVuTW9udG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -80,6 +88,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb3NDdWVudGFzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/Views/Transacciones/Calendario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY2Npb25lcy9DYWxlbmRhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/Views/Transacciones/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY2Npb25lcy9DcmVhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -88,8 +100,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY2Npb25lcy9FZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/Views/Transacciones/ExcelReporte.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY2Npb25lcy9FeGNlbFJlcG9ydGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/Views/Transacciones/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY2Npb25lcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/Views/Transacciones/Mensual.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY2Npb25lcy9NZW5zdWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/Views/Transacciones/Semanal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY2Npb25lcy9TZW1hbmFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/Views/Transacciones/_SubMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhbnNhY2Npb25lcy9fU3ViTWVudS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/Views/_ViewImports.cshtml]
@@ -111,3 +139,7 @@ build_metadata.AdditionalFiles.CssScope = b-a2c2wa7900
 [/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-s3g5jnsgnh
+
+[/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/Views/Shared/_ReporteTransaccionesDetalladas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19SZXBvcnRlVHJhbnNhY2Npb25lc0RldGFsbGFkYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-iy8mdpyl6d

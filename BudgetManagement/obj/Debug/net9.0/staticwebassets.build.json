@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vYqPCIkbqEus2XhgqoTCvzq0KHkxRG/0HoDizfKBKUw=",
+  "Hash": "7HfyPzEhecZVDQXjCDNmR7kl3X2vFmMxKslS4cHj7sw=",
   "Source": "BudgetManagement",
   "BasePath": "_content/BudgetManagement",
   "Mode": "Default",
@@ -164,12 +164,12 @@
       "OriginalItemSpec": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Identity": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/3799ky23x9-vv4677p45r.gz",
+      "Identity": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/3799ky23x9-22sty67l65.gz",
       "SourceId": "BudgetManagement",
       "SourceType": "Computed",
       "ContentRoot": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/BudgetManagement",
-      "RelativePath": "BudgetManagement#[.{fingerprint=vv4677p45r}]!.bundle.scp.css.gz",
+      "RelativePath": "BudgetManagement#[.{fingerprint=22sty67l65}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -178,8 +178,8 @@
       "RelatedAsset": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/scopedcss/projectbundle/BudgetManagement.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "sv2y7fizo9",
-      "Integrity": "6NlmMn03su2Xmtsgk5PYNdbDMVchi6wJvXJWedMSEHA=",
+      "Fingerprint": "ne6gb3k5v2",
+      "Integrity": "kST/FIpOLyCyU2OGUbCDYxliAF+A4LFt2e+hOwMwdhA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/scopedcss/projectbundle/BudgetManagement.bundle.scp.css"
@@ -1109,12 +1109,12 @@
       "OriginalItemSpec": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Identity": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/j3p8kp2tje-l8417ueqhc.gz",
+      "Identity": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/j3p8kp2tje-e369d2jis7.gz",
       "SourceId": "BudgetManagement",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/BudgetManagement",
-      "RelativePath": "css/custom#[.{fingerprint=l8417ueqhc}]?.css.gz",
+      "RelativePath": "css/custom#[.{fingerprint=e369d2jis7}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1123,8 +1123,8 @@
       "RelatedAsset": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/css/custom.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "0moaj953i2",
-      "Integrity": "6J3h1fhVPCWFapRK6Xlk2mF++jR2unvYMhPJgGJpBvI=",
+      "Fingerprint": "4kyl1l7xj8",
+      "Integrity": "NGfroSSxJENAOOXdoTClDVhr8OsGvuMWwtRi8FZ+vyk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/css/custom.css"
@@ -1382,12 +1382,12 @@
       "OriginalItemSpec": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/qwu7d1nnfq-vv4677p45r.gz",
+      "Identity": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/qwu7d1nnfq-22sty67l65.gz",
       "SourceId": "BudgetManagement",
       "SourceType": "Computed",
       "ContentRoot": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/BudgetManagement",
-      "RelativePath": "BudgetManagement#[.{fingerprint=vv4677p45r}]?.styles.css.gz",
+      "RelativePath": "BudgetManagement#[.{fingerprint=22sty67l65}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/scopedcss/bundle/BudgetManagement.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "sv2y7fizo9",
-      "Integrity": "6NlmMn03su2Xmtsgk5PYNdbDMVchi6wJvXJWedMSEHA=",
+      "Fingerprint": "ne6gb3k5v2",
+      "Integrity": "kST/FIpOLyCyU2OGUbCDYxliAF+A4LFt2e+hOwMwdhA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/scopedcss/bundle/BudgetManagement.styles.css"
@@ -1690,8 +1690,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "vv4677p45r",
-      "Integrity": "O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE=",
+      "Fingerprint": "22sty67l65",
+      "Integrity": "Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/scopedcss/bundle/BudgetManagement.styles.css"
@@ -1711,8 +1711,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "vv4677p45r",
-      "Integrity": "O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE=",
+      "Fingerprint": "22sty67l65",
+      "Integrity": "Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/scopedcss/projectbundle/BudgetManagement.bundle.scp.css"
@@ -1732,8 +1732,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "l8417ueqhc",
-      "Integrity": "SzVWJ9vPTsLN7u3h0u5Y8YiHSSItK5yU0lZA2Dt9rLk=",
+      "Fingerprint": "e369d2jis7",
+      "Integrity": "5lOQzByXEj/1iOxUxpbqezlePHIBPgstpyl4GeoJTbE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/custom.css"
@@ -3484,13 +3484,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "BudgetManagement.bundle.scp.css",
-      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/3799ky23x9-vv4677p45r.gz",
+      "Route": "BudgetManagement.22sty67l65.bundle.scp.css",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/3799ky23x9-22sty67l65.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001298701299"
+          "Quality": "0.001477104874"
         }
       ],
       "ResponseHeaders": [
@@ -3500,19 +3500,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "769"
+          "Value": "676"
         },
         {
           "Name": "ETag",
-          "Value": "\"6NlmMn03su2Xmtsgk5PYNdbDMVchi6wJvXJWedMSEHA=\""
+          "Value": "\"kST/FIpOLyCyU2OGUbCDYxliAF+A4LFt2e+hOwMwdhA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:19:19 GMT"
+          "Value": "Tue, 06 May 2025 09:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3528,18 +3528,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE=\""
+          "Value": "W/\"Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "22sty67l65"
+        },
+        {
+          "Name": "label",
+          "Value": "BudgetManagement.bundle.scp.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE="
+          "Value": "sha256-Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE="
         }
       ]
     },
     {
-      "Route": "BudgetManagement.bundle.scp.css",
+      "Route": "BudgetManagement.22sty67l65.bundle.scp.css",
       "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/scopedcss/projectbundle/BudgetManagement.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3549,7 +3557,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2156"
+          "Value": "1783"
         },
         {
           "Name": "Content-Type",
@@ -3557,258 +3565,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE=\""
+          "Value": "\"Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:19:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE="
-        }
-      ]
-    },
-    {
-      "Route": "BudgetManagement.bundle.scp.css.gz",
-      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/3799ky23x9-vv4677p45r.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "769"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6NlmMn03su2Xmtsgk5PYNdbDMVchi6wJvXJWedMSEHA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:19:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-6NlmMn03su2Xmtsgk5PYNdbDMVchi6wJvXJWedMSEHA="
-        }
-      ]
-    },
-    {
-      "Route": "BudgetManagement.styles.css",
-      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/qwu7d1nnfq-vv4677p45r.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001298701299"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "769"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6NlmMn03su2Xmtsgk5PYNdbDMVchi6wJvXJWedMSEHA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:19:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE="
-        }
-      ]
-    },
-    {
-      "Route": "BudgetManagement.styles.css",
-      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/scopedcss/bundle/BudgetManagement.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2156"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:19:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE="
-        }
-      ]
-    },
-    {
-      "Route": "BudgetManagement.styles.css.gz",
-      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/qwu7d1nnfq-vv4677p45r.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "769"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6NlmMn03su2Xmtsgk5PYNdbDMVchi6wJvXJWedMSEHA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:19:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-6NlmMn03su2Xmtsgk5PYNdbDMVchi6wJvXJWedMSEHA="
-        }
-      ]
-    },
-    {
-      "Route": "BudgetManagement.vv4677p45r.bundle.scp.css",
-      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/3799ky23x9-vv4677p45r.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001298701299"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "769"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6NlmMn03su2Xmtsgk5PYNdbDMVchi6wJvXJWedMSEHA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:19:19 GMT"
+          "Value": "Tue, 06 May 2025 09:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vv4677p45r"
+          "Value": "22sty67l65"
         },
         {
           "Name": "label",
@@ -3816,13 +3587,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE="
+          "Value": "sha256-Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE="
         }
       ]
     },
     {
-      "Route": "BudgetManagement.vv4677p45r.bundle.scp.css",
-      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/scopedcss/projectbundle/BudgetManagement.bundle.scp.css",
+      "Route": "BudgetManagement.22sty67l65.bundle.scp.css.gz",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/3799ky23x9-22sty67l65.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3831,7 +3602,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2156"
+          "Value": "676"
         },
         {
           "Name": "Content-Type",
@@ -3839,56 +3610,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE=\""
+          "Value": "\"kST/FIpOLyCyU2OGUbCDYxliAF+A4LFt2e+hOwMwdhA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:19:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vv4677p45r"
-        },
-        {
-          "Name": "label",
-          "Value": "BudgetManagement.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE="
-        }
-      ]
-    },
-    {
-      "Route": "BudgetManagement.vv4677p45r.bundle.scp.css.gz",
-      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/3799ky23x9-vv4677p45r.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "769"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6NlmMn03su2Xmtsgk5PYNdbDMVchi6wJvXJWedMSEHA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:19:19 GMT"
+          "Value": "Tue, 06 May 2025 09:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3906,7 +3632,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vv4677p45r"
+          "Value": "22sty67l65"
         },
         {
           "Name": "label",
@@ -3914,18 +3640,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6NlmMn03su2Xmtsgk5PYNdbDMVchi6wJvXJWedMSEHA="
+          "Value": "sha256-kST/FIpOLyCyU2OGUbCDYxliAF+A4LFt2e+hOwMwdhA="
         }
       ]
     },
     {
-      "Route": "BudgetManagement.vv4677p45r.styles.css",
-      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/qwu7d1nnfq-vv4677p45r.gz",
+      "Route": "BudgetManagement.22sty67l65.styles.css",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/qwu7d1nnfq-22sty67l65.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001298701299"
+          "Quality": "0.001477104874"
         }
       ],
       "ResponseHeaders": [
@@ -3935,15 +3661,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "769"
+          "Value": "676"
         },
         {
           "Name": "ETag",
-          "Value": "\"6NlmMn03su2Xmtsgk5PYNdbDMVchi6wJvXJWedMSEHA=\""
+          "Value": "\"kST/FIpOLyCyU2OGUbCDYxliAF+A4LFt2e+hOwMwdhA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:19:19 GMT"
+          "Value": "Tue, 06 May 2025 09:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3963,13 +3689,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE=\""
+          "Value": "W/\"Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vv4677p45r"
+          "Value": "22sty67l65"
         },
         {
           "Name": "label",
@@ -3977,12 +3703,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE="
+          "Value": "sha256-Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE="
         }
       ]
     },
     {
-      "Route": "BudgetManagement.vv4677p45r.styles.css",
+      "Route": "BudgetManagement.22sty67l65.styles.css",
       "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/scopedcss/bundle/BudgetManagement.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3992,7 +3718,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2156"
+          "Value": "1783"
         },
         {
           "Name": "Content-Type",
@@ -4000,11 +3726,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE=\""
+          "Value": "\"Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:19:19 GMT"
+          "Value": "Tue, 06 May 2025 09:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4014,7 +3740,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vv4677p45r"
+          "Value": "22sty67l65"
         },
         {
           "Name": "label",
@@ -4022,13 +3748,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE="
+          "Value": "sha256-Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE="
         }
       ]
     },
     {
-      "Route": "BudgetManagement.vv4677p45r.styles.css.gz",
-      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/qwu7d1nnfq-vv4677p45r.gz",
+      "Route": "BudgetManagement.22sty67l65.styles.css.gz",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/qwu7d1nnfq-22sty67l65.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4037,7 +3763,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "769"
+          "Value": "676"
         },
         {
           "Name": "Content-Type",
@@ -4045,11 +3771,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6NlmMn03su2Xmtsgk5PYNdbDMVchi6wJvXJWedMSEHA=\""
+          "Value": "\"kST/FIpOLyCyU2OGUbCDYxliAF+A4LFt2e+hOwMwdhA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 14:19:19 GMT"
+          "Value": "Tue, 06 May 2025 09:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4067,7 +3793,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vv4677p45r"
+          "Value": "22sty67l65"
         },
         {
           "Name": "label",
@@ -4075,18 +3801,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6NlmMn03su2Xmtsgk5PYNdbDMVchi6wJvXJWedMSEHA="
+          "Value": "sha256-kST/FIpOLyCyU2OGUbCDYxliAF+A4LFt2e+hOwMwdhA="
         }
       ]
     },
     {
-      "Route": "css/custom.css",
-      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/j3p8kp2tje-l8417ueqhc.gz",
+      "Route": "BudgetManagement.bundle.scp.css",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/3799ky23x9-22sty67l65.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.016666666667"
+          "Quality": "0.001477104874"
         }
       ],
       "ResponseHeaders": [
@@ -4096,15 +3822,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "59"
+          "Value": "676"
         },
         {
           "Name": "ETag",
-          "Value": "\"6J3h1fhVPCWFapRK6Xlk2mF++jR2unvYMhPJgGJpBvI=\""
+          "Value": "\"kST/FIpOLyCyU2OGUbCDYxliAF+A4LFt2e+hOwMwdhA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 19:47:11 GMT"
+          "Value": "Tue, 06 May 2025 09:19:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4124,13 +3850,287 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SzVWJ9vPTsLN7u3h0u5Y8YiHSSItK5yU0lZA2Dt9rLk=\""
+          "Value": "W/\"Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SzVWJ9vPTsLN7u3h0u5Y8YiHSSItK5yU0lZA2Dt9rLk="
+          "Value": "sha256-Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE="
+        }
+      ]
+    },
+    {
+      "Route": "BudgetManagement.bundle.scp.css",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/scopedcss/projectbundle/BudgetManagement.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 09:19:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE="
+        }
+      ]
+    },
+    {
+      "Route": "BudgetManagement.bundle.scp.css.gz",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/3799ky23x9-22sty67l65.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kST/FIpOLyCyU2OGUbCDYxliAF+A4LFt2e+hOwMwdhA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 09:19:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kST/FIpOLyCyU2OGUbCDYxliAF+A4LFt2e+hOwMwdhA="
+        }
+      ]
+    },
+    {
+      "Route": "BudgetManagement.styles.css",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/qwu7d1nnfq-22sty67l65.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001477104874"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "676"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kST/FIpOLyCyU2OGUbCDYxliAF+A4LFt2e+hOwMwdhA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 09:19:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE="
+        }
+      ]
+    },
+    {
+      "Route": "BudgetManagement.styles.css",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/scopedcss/bundle/BudgetManagement.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 09:19:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE="
+        }
+      ]
+    },
+    {
+      "Route": "BudgetManagement.styles.css.gz",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/qwu7d1nnfq-22sty67l65.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "676"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kST/FIpOLyCyU2OGUbCDYxliAF+A4LFt2e+hOwMwdhA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 09:19:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kST/FIpOLyCyU2OGUbCDYxliAF+A4LFt2e+hOwMwdhA="
+        }
+      ]
+    },
+    {
+      "Route": "css/custom.css",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/j3p8kp2tje-e369d2jis7.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004115226337"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "242"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NGfroSSxJENAOOXdoTClDVhr8OsGvuMWwtRi8FZ+vyk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 09:19:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"5lOQzByXEj/1iOxUxpbqezlePHIBPgstpyl4GeoJTbE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5lOQzByXEj/1iOxUxpbqezlePHIBPgstpyl4GeoJTbE="
         }
       ]
     },
@@ -4145,7 +4145,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "39"
+          "Value": "552"
         },
         {
           "Name": "Content-Type",
@@ -4153,11 +4153,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SzVWJ9vPTsLN7u3h0u5Y8YiHSSItK5yU0lZA2Dt9rLk=\""
+          "Value": "\"5lOQzByXEj/1iOxUxpbqezlePHIBPgstpyl4GeoJTbE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 19:47:11 GMT"
+          "Value": "Tue, 06 May 2025 09:19:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4167,13 +4167,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SzVWJ9vPTsLN7u3h0u5Y8YiHSSItK5yU0lZA2Dt9rLk="
+          "Value": "sha256-5lOQzByXEj/1iOxUxpbqezlePHIBPgstpyl4GeoJTbE="
         }
       ]
     },
     {
       "Route": "css/custom.css.gz",
-      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/j3p8kp2tje-l8417ueqhc.gz",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/j3p8kp2tje-e369d2jis7.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4182,7 +4182,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "59"
+          "Value": "242"
         },
         {
           "Name": "Content-Type",
@@ -4190,11 +4190,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6J3h1fhVPCWFapRK6Xlk2mF++jR2unvYMhPJgGJpBvI=\""
+          "Value": "\"NGfroSSxJENAOOXdoTClDVhr8OsGvuMWwtRi8FZ+vyk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 19:47:11 GMT"
+          "Value": "Tue, 06 May 2025 09:19:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4212,18 +4212,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6J3h1fhVPCWFapRK6Xlk2mF++jR2unvYMhPJgGJpBvI="
+          "Value": "sha256-NGfroSSxJENAOOXdoTClDVhr8OsGvuMWwtRi8FZ+vyk="
         }
       ]
     },
     {
-      "Route": "css/custom.l8417ueqhc.css",
-      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/j3p8kp2tje-l8417ueqhc.gz",
+      "Route": "css/custom.e369d2jis7.css",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/j3p8kp2tje-e369d2jis7.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.016666666667"
+          "Quality": "0.004115226337"
         }
       ],
       "ResponseHeaders": [
@@ -4233,15 +4233,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "59"
+          "Value": "242"
         },
         {
           "Name": "ETag",
-          "Value": "\"6J3h1fhVPCWFapRK6Xlk2mF++jR2unvYMhPJgGJpBvI=\""
+          "Value": "\"NGfroSSxJENAOOXdoTClDVhr8OsGvuMWwtRi8FZ+vyk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 19:47:11 GMT"
+          "Value": "Tue, 06 May 2025 09:19:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4261,13 +4261,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SzVWJ9vPTsLN7u3h0u5Y8YiHSSItK5yU0lZA2Dt9rLk=\""
+          "Value": "W/\"5lOQzByXEj/1iOxUxpbqezlePHIBPgstpyl4GeoJTbE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l8417ueqhc"
+          "Value": "e369d2jis7"
         },
         {
           "Name": "label",
@@ -4275,12 +4275,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SzVWJ9vPTsLN7u3h0u5Y8YiHSSItK5yU0lZA2Dt9rLk="
+          "Value": "sha256-5lOQzByXEj/1iOxUxpbqezlePHIBPgstpyl4GeoJTbE="
         }
       ]
     },
     {
-      "Route": "css/custom.l8417ueqhc.css",
+      "Route": "css/custom.e369d2jis7.css",
       "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/css/custom.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4290,7 +4290,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "39"
+          "Value": "552"
         },
         {
           "Name": "Content-Type",
@@ -4298,11 +4298,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SzVWJ9vPTsLN7u3h0u5Y8YiHSSItK5yU0lZA2Dt9rLk=\""
+          "Value": "\"5lOQzByXEj/1iOxUxpbqezlePHIBPgstpyl4GeoJTbE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 19:47:11 GMT"
+          "Value": "Tue, 06 May 2025 09:19:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4312,7 +4312,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l8417ueqhc"
+          "Value": "e369d2jis7"
         },
         {
           "Name": "label",
@@ -4320,13 +4320,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SzVWJ9vPTsLN7u3h0u5Y8YiHSSItK5yU0lZA2Dt9rLk="
+          "Value": "sha256-5lOQzByXEj/1iOxUxpbqezlePHIBPgstpyl4GeoJTbE="
         }
       ]
     },
     {
-      "Route": "css/custom.l8417ueqhc.css.gz",
-      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/j3p8kp2tje-l8417ueqhc.gz",
+      "Route": "css/custom.e369d2jis7.css.gz",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/j3p8kp2tje-e369d2jis7.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4335,7 +4335,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "59"
+          "Value": "242"
         },
         {
           "Name": "Content-Type",
@@ -4343,11 +4343,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6J3h1fhVPCWFapRK6Xlk2mF++jR2unvYMhPJgGJpBvI=\""
+          "Value": "\"NGfroSSxJENAOOXdoTClDVhr8OsGvuMWwtRi8FZ+vyk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 19:47:11 GMT"
+          "Value": "Tue, 06 May 2025 09:19:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4365,7 +4365,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l8417ueqhc"
+          "Value": "e369d2jis7"
         },
         {
           "Name": "label",
@@ -4373,7 +4373,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6J3h1fhVPCWFapRK6Xlk2mF++jR2unvYMhPJgGJpBvI="
+          "Value": "sha256-NGfroSSxJENAOOXdoTClDVhr8OsGvuMWwtRi8FZ+vyk="
         }
       ]
     },
@@ -4402,7 +4402,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 16:42:55 GMT"
+          "Value": "Tue, 06 May 2025 09:03:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4455,7 +4455,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 16:42:55 GMT"
+          "Value": "Tue, 06 May 2025 09:03:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4492,7 +4492,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 16:42:55 GMT"
+          "Value": "Tue, 06 May 2025 09:03:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4539,7 +4539,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 16:42:55 GMT"
+          "Value": "Tue, 06 May 2025 09:03:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4600,7 +4600,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 16:42:55 GMT"
+          "Value": "Tue, 06 May 2025 09:03:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4645,7 +4645,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 16:42:55 GMT"
+          "Value": "Tue, 06 May 2025 09:03:36 GMT"
         },
         {
           "Name": "Cache-Control",

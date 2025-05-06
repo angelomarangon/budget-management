@@ -49,7 +49,7 @@ public class RepositorioCuentas : IRepositorioCuentas
     {
         using var connection = new NpgsqlConnection(connectionString);
         return await connection.QueryFirstOrDefaultAsync<Cuenta>(@"
-            SELECT Cuentas.Id, Cuentas.Nombre, Balance, descripcion, tc.id 
+            SELECT Cuentas.Id, Cuentas.Nombre, Balance, descripcion, TipoCuentaId 
             FROM cuentas
             INNER JOIN TiposCuentas tc 
             ON tc.id = Cuentas.tipocuentaid

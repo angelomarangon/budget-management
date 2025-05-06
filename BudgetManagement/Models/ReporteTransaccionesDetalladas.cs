@@ -21,7 +21,7 @@ public class ReporteTransaccionesDetalladas
 
         public decimal BalanceRetiros => 
                 Transacciones.Where(x => x.TipoOperacionId == TipoOperacion.Gasto)
-                .Sum(x => x.Monto);
+                .Sum(x => -x.Monto);
         
         
     }

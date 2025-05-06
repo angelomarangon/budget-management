@@ -1,60 +1,20 @@
 /* _content/BudgetManagement/Views/Cuentas/Detalle.cshtml.rz.scp.css */
-.contenedor-totales[b-s6zf9cvlfp] {
-    display: flex;
-    justify-content: space-around;
-    font-size: 26px;
-    text-align: center;
-}
+/*.contenedor-totales {*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    font-size: 26px;*/
+/*    text-align: center;*/
+/*}*/
 
-.dias-transaccion[b-s6zf9cvlfp] {
-    background-color: lightblue; 
-    font-size: 26px;
-}
 
-.activo[b-s6zf9cvlfp] {
-    color: blue;
-}
+/*.activo {*/
+/*    color: blue;*/
+/*}*/
 
-.pasivo[b-s6zf9cvlfp] {
-    color: red;
-}
+/*.pasivo {*/
+/*    color: red;*/
+/*}*/
 /* _content/BudgetManagement/Views/Cuentas/Index.cshtml.rz.scp.css */
-.contenedor-totales[b-a2c2wa7900] {
-    display: flex;
-    justify-content: space-around;
-    font-size: 26px;
-    text-align: center;
-}
-
-.activo[b-a2c2wa7900] {
-    color: blue;
-}
-
-.pasivo[b-a2c2wa7900] {
-    color: red;
-}
-
-
-
-.accordion-cuentas[b-a2c2wa7900] {
-    color: black !important;
-    font-size: 20px;
-}
-
-.accordion-cuentas button span[b-a2c2wa7900] {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.accordion-cuentas ul li[b-a2c2wa7900] {
-    display: flex;
-    justify-content: space-between;
-}
-
-.accordion-cuentas .accordion-collapse[b-a2c2wa7900]{
-    font-size: 18px;
-}
 /* _content/BudgetManagement/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
@@ -104,3 +64,18 @@ button.accept-policy[b-s3g5jnsgnh] {
   white-space: nowrap;
   line-height: 60px;
 }
+/* _content/BudgetManagement/Views/Shared/_ReporteTransaccionesDetalladas.cshtml.rz.scp.css */
+/*.contenedor-totales {*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    font-size: 26px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.activo {*/
+/*    color: blue;*/
+/*}*/
+
+/*.pasivo {*/
+/*    color: red;*/
+/*}*/

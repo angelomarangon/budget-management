@@ -11,6 +11,10 @@ public interface IRepositorioTransacciones
     Task<Transaccion> ObtenerPorId(int id, int usuarioId);
     Task Borrar(int id);
     Task<IEnumerable<Transaccion>> ObtenerPorCuentaId(ObtenerTransaccionesPorCuenta modelo);
+    Task<IEnumerable<Transaccion>> ObtenerPorUsuarioId(ParametroObtenerTransaccionesPorUsuario modelo);
+
+    Task<IEnumerable<ResultadoObtenerPorSemana>> ObtenerPorSemana(
+        ParametroObtenerTransaccionesPorUsuario modelo);
 }
 
 public class RepositorioTransacciones : IRepositorioTransacciones
@@ -130,12 +134,27 @@ public class RepositorioTransacciones : IRepositorioTransacciones
     {
         using var connection = new NpgsqlConnection(connectionString);
         return await connection.QueryFirstOrDefaultAsync<Transaccion>(@"
-            SELECT Transacciones.*, cat.OperacionId 
+            SELECT Transacciones.*, cat.TipoOperacionId 
             FROM Transacciones
             INNER JOIN Categorias cat
             ON cat.Id = Transacciones.CategoriaId
             WHERE Transacciones.Id = @Id AND Transacciones.UsuarioId = @UsuarioId",
             new { Id = id, UsuarioId = usuarioId });
+    }
+
+    public async Task<IEnumerable<ResultadoObtenerPorSemana>> ObtenerPorSemana(
+        ParametroObtenerTransaccionesPorUsuario modelo)
+    {
+        using var connection = new NpgsqlConnection(connectionString);
+        return await connection.QueryAsync<ResultadoObtenerPorSemana>(@"
+            SELECT FLOOR(EXTRACT(DAY FROM FechaTransaccion - @fechaInicio) / 7) + 1 AS Semana,
+            SUM(Monto) AS Monto, cat.TipoOperacionId
+            FROM Transacciones
+            INNER JOIN Categorias cat
+            ON cat.Id = Transacciones.CategoriaId
+            WHERE Transacciones.UsuarioId = @usuarioId AND
+            FechaTransaccion BETWEEN @fechaInicio AND @fechaFin
+            GROUP BY FLOOR(EXTRACT(DAY FROM FechaTransaccion - @fechaInicio) / 7) + 1, cat.TipoOperacionId", modelo);
     }
 
     public async Task Borrar(int id)
@@ -153,7 +172,7 @@ public class RepositorioTransacciones : IRepositorioTransacciones
     {
         using var connection = new NpgsqlConnection(connectionString);
         return await connection.QueryAsync<Transaccion>(@"
-            SELECT t.Id, t.Monto, t.FechaTransaccion, c.Nombre AS Categoria, cu.Nombre AS Cuenta, c.OperacionId
+            SELECT t.Id, t.Monto, t.FechaTransaccion, c.Nombre AS Categoria, cu.Nombre AS Cuenta, c.TipoOperacionId
             FROM Transacciones t
             INNER JOIN Categorias c
             ON c.Id = t.CategoriaId
@@ -162,6 +181,21 @@ public class RepositorioTransacciones : IRepositorioTransacciones
             WHERE t.CuentaId = @CuentaId AND t.UsuarioId = @UsuarioId
             AND FechaTransaccion BETWEEN @FechaInicio AND @FechaFin", modelo);
     }
+    
+    public async Task<IEnumerable<Transaccion>> ObtenerPorUsuarioId(ParametroObtenerTransaccionesPorUsuario modelo)
+    {
+        using var connection = new NpgsqlConnection(connectionString);
+        return await connection.QueryAsync<Transaccion>(@"
+            SELECT t.Id, t.Monto, t.FechaTransaccion, c.Nombre AS Categoria, cu.Nombre AS Cuenta, c.TipoOperacionId
+            FROM Transacciones t
+            INNER JOIN Categorias c
+            ON c.Id = t.CategoriaId
+            INNER JOIN Cuentas cu
+            ON cu.Id = t.CuentaId
+            WHERE t.UsuarioId = @UsuarioId
+            AND FechaTransaccion BETWEEN @FechaInicio AND @FechaFin
+            ORDER BY t.FechaTransaccion DESC", modelo);
+    }
 
-
+    
 }

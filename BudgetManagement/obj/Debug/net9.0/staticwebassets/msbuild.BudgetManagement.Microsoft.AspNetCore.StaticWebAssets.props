@@ -1,22 +1,22 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BudgetManagement.vv4677p45r.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BudgetManagement.22sty67l65.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>BudgetManagement</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BudgetManagement</BasePath>
-      <RelativePath>BudgetManagement.vv4677p45r.bundle.scp.css</RelativePath>
+      <RelativePath>BudgetManagement.22sty67l65.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>vv4677p45r</Fingerprint>
-      <Integrity>O9G09zSDrtBAnF0jQxnLvPzVMmbhaUspAKURZTF8jKE=</Integrity>
+      <Fingerprint>22sty67l65</Fingerprint>
+      <Integrity>Sh1LWPTUkNInfn7GD9xj8sn3r7PXXVYt0by19IE+wZE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BudgetManagement.vv4677p45r.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BudgetManagement.22sty67l65.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\custom.css'))">
       <SourceType>Package</SourceType>
@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>l8417ueqhc</Fingerprint>
-      <Integrity>SzVWJ9vPTsLN7u3h0u5Y8YiHSSItK5yU0lZA2Dt9rLk=</Integrity>
+      <Fingerprint>e369d2jis7</Fingerprint>
+      <Integrity>5lOQzByXEj/1iOxUxpbqezlePHIBPgstpyl4GeoJTbE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\custom.css'))</OriginalItemSpec>

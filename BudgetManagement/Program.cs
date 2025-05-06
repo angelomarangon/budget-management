@@ -6,12 +6,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddTransient<IRepositorioTiposCuentas, RepositorioTiposCuentas>();
 builder.Services.AddTransient<IServicioUsuarios, ServicioUsuarios>();
+builder.Services.AddTransient<IServicioReportes, ServicioReportes>();
+builder.Services.AddTransient<IRepositorioTiposCuentas, RepositorioTiposCuentas>();
 builder.Services.AddTransient<IRepositorioCuentas, RepositorioCuentas>();
 builder.Services.AddTransient<IRepositorioCategorias, RepositorioCategorias>();
 builder.Services.AddTransient<IRepositorioTransacciones, RepositorioTransacciones>();
 builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddHttpContextAccessor();
 
 
 
@@ -42,7 +44,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
         name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}")
+        pattern: "{controller=Transacciones}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 

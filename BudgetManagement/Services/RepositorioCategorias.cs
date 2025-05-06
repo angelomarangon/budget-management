@@ -27,7 +27,7 @@ public class RepositorioCategorias : IRepositorioCategorias
     {
         using var connection = new NpgsqlConnection(connectionString);
         var id = await connection.QuerySingleAsync<int>(@"
-            INSERT INTO Categorias (Nombre, OperacionId, UsuarioId)
+            INSERT INTO Categorias (Nombre, TipoOperacionId, UsuarioId)
             VALUES (@Nombre, @TipoOperacionId, @UsuarioId)
             RETURNING Id;", categoria);
         
@@ -58,7 +58,7 @@ public class RepositorioCategorias : IRepositorioCategorias
         using var connection = new NpgsqlConnection(connectionString);
         await connection.ExecuteAsync(@"
             UPDATE Categorias
-            SET Nombre = @Nombre, OperacionId = @TipoOperacionId
+            SET Nombre = @Nombre, TipoOperacionId = @TipoOperacionId
                 WHERE Id = @Id", categoria);
     }
 
@@ -77,7 +77,7 @@ public class RepositorioCategorias : IRepositorioCategorias
         return await connection.QueryAsync<Categoria>(@"
             SELECT * 
             FROM Categorias
-            WHERE UsuarioId = @usuarioId AND OperacionId = @tipoOperacionId;", new { usuarioId, tipoOperacionId });
+            WHERE UsuarioId = @usuarioId AND TipoOperacionId = @tipoOperacionId;", new { usuarioId, tipoOperacionId });
     }
     
 }
