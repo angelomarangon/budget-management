@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7HfyPzEhecZVDQXjCDNmR7kl3X2vFmMxKslS4cHj7sw=",
+  "Hash": "pw+gRTY39xhOsEc3N9aOsBa1T3fZB9CXUiRvTdedeBE=",
   "Source": "BudgetManagement",
   "BasePath": "_content/BudgetManagement",
   "Mode": "Default",
@@ -857,6 +857,27 @@
       "OriginalItemSpec": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
+      "Identity": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/g81mlirodj-s1d8a3ib8h.gz",
+      "SourceId": "BudgetManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/BudgetManagement",
+      "RelativePath": "lib/fullcalendar/main.min#[.{fingerprint=s1d8a3ib8h}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/fullcalendar/main.min.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "nfhybj8j3r",
+      "Integrity": "w+PCWVWtnllt0mzfMqOmnvoeFLEFK4wAKUw5xCJ+Cac=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/fullcalendar/main.min.css"
+    },
+    {
       "Identity": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/h5nln3hyno-bqjiyaj88i.gz",
       "SourceId": "BudgetManagement",
       "SourceType": "Discovered",
@@ -1422,6 +1443,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/js/site.js"
+    },
+    {
+      "Identity": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/spaofslsz2-6mmcung340.gz",
+      "SourceId": "BudgetManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/BudgetManagement",
+      "RelativePath": "lib/fullcalendar/main.min#[.{fingerprint=6mmcung340}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/fullcalendar/main.min.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "gxuq2xatt0",
+      "Integrity": "FGX2R+tZKaxkM4bQ26eG+lNFM1VO8q6zJxHc07lqxHU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/fullcalendar/main.min.js"
     },
     {
       "Identity": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/t1d5btdh2z-k8d9w2qqmf.gz",
@@ -2766,6 +2808,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
+    },
+    {
+      "Identity": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/fullcalendar/main.min.css",
+      "SourceId": "BudgetManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/",
+      "BasePath": "_content/BudgetManagement",
+      "RelativePath": "lib/fullcalendar/main.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s1d8a3ib8h",
+      "Integrity": "EAq+X/hXd44MlSOCkm9hchPJT78vQ4UBTT7FBkQl9qE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/fullcalendar/main.min.css"
+    },
+    {
+      "Identity": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/fullcalendar/main.min.js",
+      "SourceId": "BudgetManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/",
+      "BasePath": "_content/BudgetManagement",
+      "RelativePath": "lib/fullcalendar/main.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6mmcung340",
+      "Integrity": "gqhxNoRraWeCppNZHezKGig+uPdmR/cntAtJsdTkm5A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/fullcalendar/main.min.js"
     },
     {
       "Identity": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/jquery-ui/AUTHORS.txt",
@@ -18760,6 +18844,602 @@
         {
           "Name": "integrity",
           "Value": "sha256-WzAxfJw1u28FEBxQHehmzGhSq5tlXc9ZQXM/ZkTD69A="
+        }
+      ]
+    },
+    {
+      "Route": "lib/fullcalendar/main.min.6mmcung340.js",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/spaofslsz2-6mmcung340.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000013000351"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76920"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FGX2R+tZKaxkM4bQ26eG+lNFM1VO8q6zJxHc07lqxHU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 May 2023 15:46:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gqhxNoRraWeCppNZHezKGig+uPdmR/cntAtJsdTkm5A=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6mmcung340"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/fullcalendar/main.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gqhxNoRraWeCppNZHezKGig+uPdmR/cntAtJsdTkm5A="
+        }
+      ]
+    },
+    {
+      "Route": "lib/fullcalendar/main.min.6mmcung340.js",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/fullcalendar/main.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "270797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gqhxNoRraWeCppNZHezKGig+uPdmR/cntAtJsdTkm5A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 May 2023 15:46:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6mmcung340"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/fullcalendar/main.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gqhxNoRraWeCppNZHezKGig+uPdmR/cntAtJsdTkm5A="
+        }
+      ]
+    },
+    {
+      "Route": "lib/fullcalendar/main.min.6mmcung340.js.gz",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/spaofslsz2-6mmcung340.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76920"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FGX2R+tZKaxkM4bQ26eG+lNFM1VO8q6zJxHc07lqxHU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 May 2023 15:46:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6mmcung340"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/fullcalendar/main.min.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FGX2R+tZKaxkM4bQ26eG+lNFM1VO8q6zJxHc07lqxHU="
+        }
+      ]
+    },
+    {
+      "Route": "lib/fullcalendar/main.min.css",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/g81mlirodj-s1d8a3ib8h.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000166251039"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6014"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w+PCWVWtnllt0mzfMqOmnvoeFLEFK4wAKUw5xCJ+Cac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 May 2023 15:46:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EAq+X/hXd44MlSOCkm9hchPJT78vQ4UBTT7FBkQl9qE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EAq+X/hXd44MlSOCkm9hchPJT78vQ4UBTT7FBkQl9qE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/fullcalendar/main.min.css",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/fullcalendar/main.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26384"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EAq+X/hXd44MlSOCkm9hchPJT78vQ4UBTT7FBkQl9qE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 May 2023 15:46:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EAq+X/hXd44MlSOCkm9hchPJT78vQ4UBTT7FBkQl9qE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/fullcalendar/main.min.css.gz",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/g81mlirodj-s1d8a3ib8h.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w+PCWVWtnllt0mzfMqOmnvoeFLEFK4wAKUw5xCJ+Cac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 May 2023 15:46:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-w+PCWVWtnllt0mzfMqOmnvoeFLEFK4wAKUw5xCJ+Cac="
+        }
+      ]
+    },
+    {
+      "Route": "lib/fullcalendar/main.min.js",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/spaofslsz2-6mmcung340.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000013000351"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76920"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FGX2R+tZKaxkM4bQ26eG+lNFM1VO8q6zJxHc07lqxHU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 May 2023 15:46:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gqhxNoRraWeCppNZHezKGig+uPdmR/cntAtJsdTkm5A=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gqhxNoRraWeCppNZHezKGig+uPdmR/cntAtJsdTkm5A="
+        }
+      ]
+    },
+    {
+      "Route": "lib/fullcalendar/main.min.js",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/fullcalendar/main.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "270797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gqhxNoRraWeCppNZHezKGig+uPdmR/cntAtJsdTkm5A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 May 2023 15:46:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gqhxNoRraWeCppNZHezKGig+uPdmR/cntAtJsdTkm5A="
+        }
+      ]
+    },
+    {
+      "Route": "lib/fullcalendar/main.min.js.gz",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/spaofslsz2-6mmcung340.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76920"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FGX2R+tZKaxkM4bQ26eG+lNFM1VO8q6zJxHc07lqxHU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 May 2023 15:46:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FGX2R+tZKaxkM4bQ26eG+lNFM1VO8q6zJxHc07lqxHU="
+        }
+      ]
+    },
+    {
+      "Route": "lib/fullcalendar/main.min.s1d8a3ib8h.css",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/g81mlirodj-s1d8a3ib8h.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000166251039"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6014"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w+PCWVWtnllt0mzfMqOmnvoeFLEFK4wAKUw5xCJ+Cac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 May 2023 15:46:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EAq+X/hXd44MlSOCkm9hchPJT78vQ4UBTT7FBkQl9qE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s1d8a3ib8h"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/fullcalendar/main.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EAq+X/hXd44MlSOCkm9hchPJT78vQ4UBTT7FBkQl9qE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/fullcalendar/main.min.s1d8a3ib8h.css",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/fullcalendar/main.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26384"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EAq+X/hXd44MlSOCkm9hchPJT78vQ4UBTT7FBkQl9qE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 May 2023 15:46:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s1d8a3ib8h"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/fullcalendar/main.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EAq+X/hXd44MlSOCkm9hchPJT78vQ4UBTT7FBkQl9qE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/fullcalendar/main.min.s1d8a3ib8h.css.gz",
+      "AssetFile": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/g81mlirodj-s1d8a3ib8h.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w+PCWVWtnllt0mzfMqOmnvoeFLEFK4wAKUw5xCJ+Cac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 May 2023 15:46:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s1d8a3ib8h"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/fullcalendar/main.min.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-w+PCWVWtnllt0mzfMqOmnvoeFLEFK4wAKUw5xCJ+Cac="
         }
       ]
     },

@@ -205,6 +205,14 @@
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
+      "Id": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/fullcalendar/main.min.css",
+      "PackagePath": "staticwebassets/lib/fullcalendar/main.min.css"
+    },
+    {
+      "Id": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/fullcalendar/main.min.js",
+      "PackagePath": "staticwebassets/lib/fullcalendar/main.min.js"
+    },
+    {
       "Id": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/lib/jquery-ui/AUTHORS.txt",
       "PackagePath": "staticwebassets/lib/jquery-ui/AUTHORS.txt"
     },

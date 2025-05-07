@@ -612,6 +612,30 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z6qzljqjd0"},{"Name":"integrity","Value":"sha256-WzAxfJw1u28FEBxQHehmzGhSq5tlXc9ZQXM/ZkTD69A="},{"Name":"label","Value":"_content/BudgetManagement/lib/bootstrap/LICENSE"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1131"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022WzAxfJw1u28FEBxQHehmzGhSq5tlXc9ZQXM/ZkTD69A=\u0022"},{"Name":"Last-Modified","Value":"Fri, 25 Apr 2025 16:42:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BudgetManagement/lib/fullcalendar/main.min.6mmcung340.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\fullcalendar\main.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6mmcung340"},{"Name":"integrity","Value":"sha256-gqhxNoRraWeCppNZHezKGig\u002BuPdmR/cntAtJsdTkm5A="},{"Name":"label","Value":"_content/BudgetManagement/lib/fullcalendar/main.min.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"270797"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022gqhxNoRraWeCppNZHezKGig\u002BuPdmR/cntAtJsdTkm5A=\u0022"},{"Name":"Last-Modified","Value":"Mon, 08 May 2023 15:46:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BudgetManagement/lib/fullcalendar/main.min.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\fullcalendar\main.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-EAq\u002BX/hXd44MlSOCkm9hchPJT78vQ4UBTT7FBkQl9qE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"26384"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022EAq\u002BX/hXd44MlSOCkm9hchPJT78vQ4UBTT7FBkQl9qE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 08 May 2023 15:46:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BudgetManagement/lib/fullcalendar/main.min.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\fullcalendar\main.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gqhxNoRraWeCppNZHezKGig\u002BuPdmR/cntAtJsdTkm5A="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"270797"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022gqhxNoRraWeCppNZHezKGig\u002BuPdmR/cntAtJsdTkm5A=\u0022"},{"Name":"Last-Modified","Value":"Mon, 08 May 2023 15:46:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BudgetManagement/lib/fullcalendar/main.min.s1d8a3ib8h.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\fullcalendar\main.min.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"s1d8a3ib8h"},{"Name":"integrity","Value":"sha256-EAq\u002BX/hXd44MlSOCkm9hchPJT78vQ4UBTT7FBkQl9qE="},{"Name":"label","Value":"_content/BudgetManagement/lib/fullcalendar/main.min.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"26384"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022EAq\u002BX/hXd44MlSOCkm9hchPJT78vQ4UBTT7FBkQl9qE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 08 May 2023 15:46:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BudgetManagement/lib/jquery-ui/AUTHORS.72bi5bmqwh.txt">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery-ui\AUTHORS.txt'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

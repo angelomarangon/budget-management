@@ -119,3 +119,13 @@
 /Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/j3p8kp2tje-e369d2jis7.gz
 /Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/qwu7d1nnfq-22sty67l65.gz
 /Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/3799ky23x9-22sty67l65.gz
+/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/bin/Debug/net9.0/ClosedXML.dll
+/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/bin/Debug/net9.0/ClosedXML.Parser.dll
+/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/bin/Debug/net9.0/DocumentFormat.OpenXml.dll
+/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/bin/Debug/net9.0/DocumentFormat.OpenXml.Framework.dll
+/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/bin/Debug/net9.0/ExcelNumberFormat.dll
+/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/bin/Debug/net9.0/RBush.dll
+/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/bin/Debug/net9.0/SixLabors.Fonts.dll
+/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/bin/Debug/net9.0/System.IO.Packaging.dll
+/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/g81mlirodj-s1d8a3ib8h.gz
+/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/spaofslsz2-6mmcung340.gz
