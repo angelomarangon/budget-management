@@ -11,10 +11,12 @@
 
 .activo {
     color: blue;
+    --bs-table-color: blue;
 }
 
 .pasivo {
     color: red;
+    --bs-table-color: red;
 }
 
 .accordion-cuentas {
