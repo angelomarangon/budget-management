@@ -116,7 +116,6 @@
 /Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/BudgetManagement.sourcelink.json
 /Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/scopedcss/Views/Shared/_ReporteTransaccionesDetalladas.cshtml.rz.scp.css
 /Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/d8ohlj31mx-lugek5hnai.gz
-/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/j3p8kp2tje-e369d2jis7.gz
 /Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/qwu7d1nnfq-22sty67l65.gz
 /Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/3799ky23x9-22sty67l65.gz
 /Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/bin/Debug/net9.0/ClosedXML.dll
@@ -129,3 +128,4 @@
 /Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/bin/Debug/net9.0/System.IO.Packaging.dll
 /Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/g81mlirodj-s1d8a3ib8h.gz
 /Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/spaofslsz2-6mmcung340.gz
+/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/compressed/j3p8kp2tje-nu07n191ey.gz

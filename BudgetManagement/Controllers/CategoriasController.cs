@@ -18,12 +18,22 @@ public class CategoriasController:Controller
     }
 
 
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> Index(PaginacionViewModel paginacionViewModel)
     {
         var usuarioId = _servicioUsuarios.ObtenerUsuarioId();
-        var categorias = await _repositorioCategorias.Obtener(usuarioId);
+        var categorias = await _repositorioCategorias.Obtener(usuarioId, paginacionViewModel);
+        var totalCategorias = await _repositorioCategorias.Contar(usuarioId);
+
+        var respuestaViewModel = new PaginacionRespuesta<Categoria>()
+        {
+            Elementos = categorias,
+            Pagina = paginacionViewModel.Pagina,
+            RecordsPorPagina = paginacionViewModel.RecordsPorPagina,
+            CantidadTotalRecords = totalCategorias,
+            BaseURL = Url.Action()
+        };
         
-        return View(categorias);
+        return View(respuestaViewModel);
     }
     
     [HttpGet]

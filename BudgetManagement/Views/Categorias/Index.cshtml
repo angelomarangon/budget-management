@@ -1,4 +1,4 @@
-@model IEnumerable<Categoria>
+@model PaginacionRespuesta<Categoria>
 @{
     ViewData["Title"] = "Categorias";
 }
@@ -6,7 +6,21 @@
 <h1>Categorias</h1>
 <h5>La categoria nos permite indicar en que gastamos nuestro dinero, tambien, de donde provienen nuestros ingresos</h5>
 
+
 <a asp-action="Crear" class="btn btn-primary mb-3">Crear nuevo</a>
+
+<div class="row">
+    <label>Cantidad de registros a mostrar</label>
+    <div class="mb-3 col-auto">
+        <select asp-for="@Model.RecordsPorPagina" id="cantidadRecordsPorPaginas" class="form-select">
+            <option>5</option>
+            <option>10</option>
+            <option>20</option>
+        </select>
+    </div>
+</div>
+
+<partial name="_Paginacion"/>
 
 <table class="table">
     <thead>
@@ -17,7 +31,7 @@
     </tr>
     </thead>
     <tbody>
-    @foreach (var categoria in Model)
+    @foreach (var categoria in Model.Elementos)
     {
         <tr>
             <td>
@@ -34,3 +48,14 @@
     }
     </tbody>
 </table>
+
+
+@section Scripts
+{
+    <script>
+        $("#cantidadRecordsPorPaginas").change(function() {
+            const recordsPorPagina = $(this).val();
+            location.href = `/categorias/?pagina=1&recordsPorPagina=${recordsPorPagina}`;
+        });
+    </script>
+}

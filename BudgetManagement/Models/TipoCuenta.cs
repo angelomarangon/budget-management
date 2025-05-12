@@ -11,7 +11,7 @@ public class TipoCuenta
     [Required(ErrorMessage = "{0} es requerido")]
     [PrimeraLetraMayuscula]
     [StringLength(maximumLength: 50, MinimumLength = 3, ErrorMessage = "Nombre debe tener entre 3 y 50 caracteres")]
-    [Remote(action: "VerificarExisteTipoCuenta", controller:"TiposCuentas")]
+    [Remote(action: "VerificarExisteTipoCuenta", controller:"TiposCuentas", AdditionalFields = nameof(Id))]
     public string Nombre { get; set; }
     public int UsuarioId { get; set; }
     public int Orden { get; set; }

@@ -83,10 +83,10 @@ public class TiposCuentasController : Controller
 
 
     [HttpGet]
-    public async Task<IActionResult> VerificarExisteTipoCuenta(string nombre)
+    public async Task<IActionResult> VerificarExisteTipoCuenta(string nombre, int id)
     {
         var usuarioId = _servicioUsuarios.ObtenerUsuarioId();
-        var yaExisteTipoCuenta = await _repositorioTiposCuentas.Existe(nombre, usuarioId);
+        var yaExisteTipoCuenta = await _repositorioTiposCuentas.Existe(nombre, usuarioId, id);
 
         if (yaExisteTipoCuenta)
         {

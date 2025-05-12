@@ -1,3 +1,5 @@
+using System.Security.Claims;
+
 namespace BudgetManagement.Services;
 
 public interface IServicioUsuarios
@@ -7,8 +9,24 @@ public interface IServicioUsuarios
 
 public class ServicioUsuarios : IServicioUsuarios
 {
+    private readonly HttpContext httpContext;
+
+    public ServicioUsuarios(IHttpContextAccessor httpContextAccessor)
+    {
+        httpContext = httpContextAccessor.HttpContext;
+    }
+
     public int ObtenerUsuarioId()
     {
-        return 1;
+        if (httpContext.User.Identity.IsAuthenticated)
+        {
+            var idClaim = httpContext.User.Claims.Where(x => x.Type == ClaimTypes.NameIdentifier).FirstOrDefault();
+            var id = int.Parse(idClaim!.Value);
+            return id;
+        }
+        else
+        {
+            throw new ApplicationException("El usuario no esta autenticado");
+        }
     }
 }

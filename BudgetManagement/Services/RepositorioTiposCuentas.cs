@@ -7,7 +7,7 @@ namespace BudgetManagement.Services;
 public interface IRepositorioTiposCuentas
 {
     Task Crear(TipoCuenta tipoCuenta);
-    Task<bool> Existe(string nombre, int usuarioId);
+    Task<bool> Existe(string nombre, int usuarioId, int id = 0);
     Task<IEnumerable<TipoCuenta>> Obtener(int usuarioId);
     Task Actualizar(TipoCuenta tipoCuenta);
     Task<TipoCuenta> ObtenerPorId(int id, int usuarioId);
@@ -46,13 +46,13 @@ public class RepositorioTiposCuentas : IRepositorioTiposCuentas
         tipoCuenta.Id = id;
     }
 
-    public async Task<bool> Existe(string nombre, int usuarioId)
+    public async Task<bool> Existe(string nombre, int usuarioId, int id = 0)
     {
         using var connection = new NpgsqlConnection(connectionString);
         var existe = await connection.QueryFirstOrDefaultAsync<int>(@"
             SELECT 1 
             FROM TiposCuentas
-            WHERE Nombre = @Nombre AND UsuarioId = @UsuarioId;", new { nombre, usuarioId }
+            WHERE Nombre = @nombre AND UsuarioId = @usuarioId AND Id <> @id;", new { nombre, usuarioId, id }
         );
         return existe == 1;
     }

@@ -4,6 +4,7 @@ using AutoMapper;
 using BudgetManagement.Models;
 using BudgetManagement.Services;
 using ClosedXML.Excel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -33,7 +34,7 @@ public class TransaccionesController : Controller
         _servicioReportes = servicioReportes;
         _mapper = mapper;
     }
-
+    
     public async Task<IActionResult> Index(int mes, int anio)
     {
         var usuarioId = _servicioUsuarios.ObtenerUsuarioId();
@@ -457,6 +458,13 @@ public class TransaccionesController : Controller
     private async Task<IEnumerable<SelectListItem>> ObtenerCategorias(int usuarioId, TipoOperacion tipoOperacion)
     {
         var categorias = await _repositorioCategorias.Obtener(usuarioId, tipoOperacion);
-        return categorias.Select(x => new SelectListItem(x.Nombre, x.Id.ToString()));
+        var resultado = categorias
+            .Select(x => new SelectListItem(x.Nombre, x.Id.ToString())).ToList();
+
+        var opcionPorDefecto = new SelectListItem("-- Selecciones una categoria --", "0", true);
+        
+        resultado.Insert(0, opcionPorDefecto);
+        
+        return resultado;
     }
 }
