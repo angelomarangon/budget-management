@@ -40,9 +40,6 @@ secrets.json
 # Carpeta de paquetes (por si no usas restore externo)
 packages/
 
-# Archivos específicos de ASP.NET Core
-wwwroot/lib/
-
 # Backup de pgAdmin u otros SQL temporales (por si los colocas en la raíz)
 *.bak
 *.sql
