@@ -4,10 +4,24 @@
     ViewData["Title"] = "Borrar cuenta";
 }
 
-<h3 class="mb-3">Esta seguro que desea borrar la cuenta @Model.Nombre?</h3>
+<div class="container-fluid">
+    <div class="row justify-content-center py-5">
+        <div class="col-md-6 text-center">
+            <h1 class="mb-4" class="mb-3">Esta seguro que desea borrar la cuenta <strong
+                    style="color: #6f42c1;">@Model.Nombre</strong>?</h1>
 
-<form asp-action="BorrarCuenta">
-    <input type="hidden" asp-for="Id" />
-    <button class="btn btn-danger" type="submit">Borrar</button>
-    <a class="btn btn-secondary" asp-action="Index">Cancelar</a>
-</form>
+            <form asp-action="BorrarCuenta">
+                <input type="hidden" asp-for="Id" />
+
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-danger" type="submit">Borrar</button>
+                    <a class="btn btn-secondary" asp-action="Cuentas">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="image-container3">
+    <img src="~/img/borrarCat.svg" alt="Imagen visual" class="img-fluid" />
+</div>

@@ -1,0 +1,127 @@
+@model IEnumerable<IndiceCuentasViewModel>
+
+@{
+    ViewData["Title"] = "Cuentas";
+
+    string FomatearBalance(decimal balance)
+    {
+        return Math.Abs(balance).ToString("N");
+    }
+
+    string ObtenerClaseBalance(decimal balance)
+    {
+        return balance >= 0 ? "activo" : "pasivo";
+    }
+}
+
+<div class="categoria-wrapper py-4">
+    <div class="d-flex justify-content-between align-items-start mb-4">
+        <div>
+            <h1 class="fw-bold mb-1">Cuentas</h1>
+            <p class="text-muted">
+                Aquí puedes visualizar y administrar tus cuentas. Organiza tus activos, pasivos y realiza cambios en tus
+                registros fácilmente.
+            </p>
+        </div>
+        <a asp-action="Crear" class="btn btn-categoria">
+            <i class="bi bi-plus-circle me-1"></i> Crear nuevo
+        </a>
+    </div>
+    <div class="contenedor-totales">
+        <div>
+            <div>
+                <strong>Activos</strong>
+            </div>
+            <div class="activo">
+                $@FomatearBalance(Model.Where(x => x.Balance > 0).Sum(x => x.Balance))
+            </div>
+        </div>
+        <div>
+            <div>
+                <strong>Pasivos</strong>
+            </div>
+            <div class="pasivo">
+                $@FomatearBalance(Model.Where(x => x.Balance < 0).Sum(x => x.Balance))
+            </div>
+        </div>
+        <div>
+            <div>
+                <strong>Total</strong>
+            </div>
+            <div class="total">
+                @(
+                Model.Sum(x => x.Balance) < 0 ?
+                    "-$" + FomatearBalance(Model.Sum(x => x.Balance)) :
+                "$" + FomatearBalance(Model.Sum(x => x.Balance))
+                )
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion">
+        @foreach (var tipoCuenta in Model)
+        {
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="cabeceraUno">
+                    @{
+                        var id = tipoCuenta.TipoCuenta.Replace(" ", "");
+                        var dataBSTarget = "#" + id;
+                        var claseTipoCuenta = ObtenerClaseBalance(tipoCuenta.Balance);
+                    }
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="@dataBSTarget">
+                        <div class="d-flex justify-content-between w-100">
+                            <!-- Nombre del Tipo de Cuenta a la izquierda -->
+                            <div class="w-50">
+                                <strong>@tipoCuenta.TipoCuenta</strong>
+                            </div>
+                            <!-- Balance centrado -->
+                            <div class="w-50">
+                                <span class="@claseTipoCuenta">$@FomatearBalance(tipoCuenta.Balance)</span>
+                            </div>
+                        </div>
+                    </button>
+                </h2>
+                
+                <div id="@id" class="accordion-collapse collapse show">
+                    <div>
+                        <ul class="list-group">
+                            @foreach (var cuenta in tipoCuenta.Cuentas)
+                            {
+                                var claseCuenta = ObtenerClaseBalance(cuenta.Balance);
+                                <li class="list-group-item">
+                                    <div class="d-flex justify-content-between w-100">
+                                        <div class="w-50">
+                                            <a asp-action="Detalle" asp-route-id="@cuenta.Id" class="cuenta-link">
+                                                @cuenta.Nombre
+                                            </a>
+                                        </div>
+                                        <div class="d-flex w-50 justify-content-between">
+                                            <div class="w-25">
+                                                <span class="@claseCuenta">@FomatearBalance(cuenta.Balance)</span>
+                                            </div>
+                                            <div class="w-25">
+                                                <div class="d-flex justify-content-center gap-2">
+                                                    <a class="btn btn-sm btn-outline-primary d-flex align-items-center gap-1"
+                                                       asp-action="Editar" asp-route-id="@cuenta.Id">
+                                                        <i class="bi bi-pencil-fill"></i> Editar
+                                                    </a>
+                                                    <a class="btn btn-sm btn-outline-danger d-flex align-items-center gap-1"
+                                                       asp-action="Borrar" asp-route-id="@cuenta.Id">
+                                                        <i class="bi bi-trash-fill"></i> Borrar
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+

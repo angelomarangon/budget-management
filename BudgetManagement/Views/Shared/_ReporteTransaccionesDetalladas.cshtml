@@ -7,43 +7,55 @@
         Gastos = Model.BalanceRetiros,
         Total = Model.Total
     };
+    
+    string FomatearBalance(decimal balance)
+    {
+        return Math.Abs(balance).ToString("N");
+    }
 }
 
-<partial name="_NavegarPorMeses" model="@Model.FechaInicio"/>
+<partial name="_NavegarPorMeses" model="@Model.FechaInicio" />
 
-<partial name="_ResumenMontos" model="@resumenMontos"/>
+<partial name="_ResumenMontos" model="@resumenMontos" />
 
 @if (Model.TransaccionesAgrupadas.Count() == 0)
 {
-    <h5>No hay datos para mostrar</h5>
+    <div class="no-datos-container text-center my-5">
+        <i class="bi bi-exclamation-circle" style="font-size: 50px; color: #6F42C1;"></i>
+        <h5 class="mt-3" style="color: #6F42C1;">¡Parece que aún no hay datos para mostrar!</h5>
+    </div>
+    
+    <div class="image-container4">
+        <img src="~/img/noDatos.svg" alt="Imagen visual" class="img-fluid"/>
+    </div>
 }
 else
 {
-    <table class="table">
+    <table class="table custom-table">
         <tbody>
         @foreach (var transaccionAgupada in Model.TransaccionesAgrupadas)
         {
-            <tr style="--bs-table-bg: lightblue; font-size: 26px">
-                <td colspan="3">
-                    @transaccionAgupada.FechaTransaccion.Day
-                    <span class="badge bg-secondary">@transaccionAgupada.FechaTransaccion.ToString("ddd")</span>
-                </td>
-                <td class="activo">@transaccionAgupada.BalanceDepositos.ToString("N")</td>
-                <td class="pasivo">@transaccionAgupada.BalanceRetiros.ToString("N")</td>
+            <tr class="table-header" style="--bs-table-bg: #E0D6FF;">
+                        <td colspan="3">
+                            <span class="fecha">@transaccionAgupada.FechaTransaccion.Day</span>
+                            <span class="badge bg-purple p-1">@transaccionAgupada.FechaTransaccion.ToString("dddd")</span>
+                        </td>
+                        <td class="activo font-balance">$@transaccionAgupada.BalanceDepositos.ToString("N")</td>
+                        <td class="pasivo font-balance">$@transaccionAgupada.BalanceRetiros.ToString("N")</td>
             </tr>
             @foreach (var transaccion in transaccionAgupada.Transacciones)
             {
-                <tr style="vertical-align: middle">
+                <tr class="table-row">
                     <td>
-                        <a asp-controller="Transacciones" asp-action="Editar" 
+                        <a asp-controller="Transacciones" asp-action="Editar"
                            asp-route-id="@transaccion.Id" asp-route-urlRetorno="@ViewBag.urlRetorno">
-                            <i class="bi-pencil"></i>
+                            <i class="bi bi-pencil-fill lapiz"></i>
                         </a>
                     </td>
                     <td>@transaccion.Categoria</td>
                     <td>@transaccion.Cuenta</td>
-                    <td class="activo">@(transaccion.TipoOperacionId == TipoOperacion.Ingreso ? transaccion.Monto.ToString("N") : null)</td>
-                    <td class="pasivo">@(transaccion.TipoOperacionId == TipoOperacion.Gasto ? transaccion.Monto.ToString("N") : null)</td>
+                    <td class="activo"><span class="ms-1">@(transaccion.TipoOperacionId == TipoOperacion.Ingreso ? transaccion.Monto.ToString("N") : null)</span></td>
+                    <td class="pasivo"><span class="ms-2">@(transaccion.TipoOperacionId == TipoOperacion.Gasto ? FomatearBalance(transaccion.Monto) : null)</span></td>
                 </tr>
             }
         }

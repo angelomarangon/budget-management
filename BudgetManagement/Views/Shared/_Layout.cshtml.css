@@ -1,48 +1,85 @@
-﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿/* Navbar general */
+.custom-navbar {
+  background-color: #7C3AED;
+  padding: 0.5rem 1.2rem;
 }
 
-a {
-  color: #0077cc;
-}
+/*.navbar-brand {*/
+/*  background-color: #ffffff;*/
+/*  color: #7C3AED;*/
+/*  font-size: 1.3rem;*/
+/*  font-weight: 700;*/
+/*  border-radius: 0.5rem;*/
+/*  padding: 0.3rem 0.8rem;*/
+/*  transition: all 0.3s ease;*/
+/*}*/
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
+/*.navbar-brand:hover {*/
+/*  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);*/
+/*  transform: scale(1.03);*/
+/*}*/
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
+/*!* Links principales del navbar *!*/
+/*.custom-navbar .navbar-nav .nav-link {*/
+/*  color: white;*/
+/*  font-weight: 500;*/
+/*  margin-right: 1rem;*/
+/*  position: relative;*/
+/*  transition: all 0.3s ease;*/
+/*}*/
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
+/*.custom-navbar .navbar-nav .nav-link:hover {*/
+/*  color: #ddd6fe;*/
+/*  transform: translateY(-2px);*/
+/*}*/
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
+/*.custom-navbar .navbar-nav .nav-link.active {*/
+/*  color: #e0e7ff;*/
+/*}*/
 
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
+/*.custom-navbar .navbar-nav .nav-link.active::after {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  bottom: -3px;*/
+/*  left: 0;*/
+/*  height: 2px;*/
+/*  width: 100%;*/
+/*  background-color: #e0e7ff;*/
+/*}*/
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
-}
+
+
+
+
+
+
+
+
+
+/*!* Footer *!*/
+/*.custom-footer {*/
+/*  background-color: #f9fafb;*/
+/*  border-top: 1px solid #e5e7eb;*/
+/*  font-size: 0.9rem;*/
+/*  color: #6b7280;*/
+/*}*/
+
+/*.custom-footer a {*/
+/*  color: #7C3AED;*/
+/*  text-decoration: none;*/
+/*}*/
+
+/*.custom-footer a:hover {*/
+/*  text-decoration: underline;*/
+/*}*/
+
+/*.footer-icons a {*/
+/*  margin-left: 15px;*/
+/*  font-size: 1.3rem;*/
+/*  transition: transform 0.2s ease, color 0.2s ease;*/
+/*}*/
+
+/*.footer-icons a:hover {*/
+/*  color: #5B21B6;*/
+/*  transform: scale(1.15);*/
+/*}*/

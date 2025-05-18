@@ -3,10 +3,24 @@
     ViewData["Title"] = "Borrar categoria";
 }
 
-<h3 class="mb-3">Estas seguro que deseas borrar la categoria?</h3>
+<div class="container-fluid">
+    <div class="row justify-content-center py-5">
+        <div class="col-md-6 text-center">
+            <h1 class="mb-4">¿Estás seguro que deseas borrar la categoría?</h1>
 
-<form asp-action="BorrarCategoria">
-    <input type="hidden" asp-for="Id"/>
-    <button type="submit" class="btn btn-danger">Borrar</button>
-    <a class="btn btn-secondary" asp-action="Index">Cancelar</a>
-</form>
+            <form asp-action="BorrarCategoria">
+                <input type="hidden" asp-for="Id"/>
+
+                <!-- Botones -->
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-danger">Borrar</button>
+                    <a class="btn btn-secondary" asp-action="Categorias">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="image-container3">
+    <img src="~/img/borrarCat.svg" alt="Imagen visual" class="img-fluid"/>
+</div>

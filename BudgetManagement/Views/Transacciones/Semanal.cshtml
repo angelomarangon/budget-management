@@ -7,6 +7,11 @@
     {
         return fecha.ToString("MM.dd");
     }
+    
+    string FomatearBalance(decimal balance)
+    {
+        return Math.Abs(balance).ToString("N");
+    }
 
     var resumenMontos = new ResumenMontoViewModel()
     {
@@ -22,26 +27,29 @@
 
 <partial name="_ResumenMontos" model="@resumenMontos"/>
 
-<table class="table" style="font-size: 20px">
+<table class="table tabla-semanal">
     <thead>
     <tr>
         <th>Semana</th>
-        <th style="text-align: right">Ingresos</th>
-        <th style="text-align: right">Gastos</th>
+        <th class="text-end">Ingresos</th>
+        <th class="text-end">Gastos</th>
     </tr>
     </thead>
+    <tbody>
     @foreach (var transaccionesPorSemana in Model.TransaccionesPorSemana)
     {
         <tr>
             <td>
-                <a style="text-decoration: none" asp-action="Index" 
+                <a class="semana-badge" asp-action="Index"
                    asp-route-anio="@Model.FechaReferencia.Year"
-                   asp-route-mes="@Model.FechaReferencia.Month"
-                >@FormatearFecha(transaccionesPorSemana.FechaInicio) ~ @FormatearFecha(transaccionesPorSemana.FechaFin)</a>
+                   asp-route-mes="@Model.FechaReferencia.Month">
+                    <i class="bi bi-calendar-week me-1"></i>
+                    @FormatearFecha(transaccionesPorSemana.FechaInicio) ~ @FormatearFecha(transaccionesPorSemana.FechaFin)
+                </a>
             </td>
-            <td class="activo" style="text-align: right">@transaccionesPorSemana.Ingresos</td>
-            <td class="pasivo" style="text-align: right">@transaccionesPorSemana.Gastos</td>
-            
+            <td class="text-end activo">@FomatearBalance(transaccionesPorSemana.Ingresos)</td>
+            <td class="text-end pasivo">@FomatearBalance(transaccionesPorSemana.Gastos)</td>
         </tr>
     }
+    </tbody>
 </table>

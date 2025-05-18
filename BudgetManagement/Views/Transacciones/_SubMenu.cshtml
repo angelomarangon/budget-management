@@ -1,23 +1,31 @@
 @model SubMenuTransacciones
 
-<ul class="nav nav-pills nav-fill mb-3">
-    <li class="nav-item">
-        <a class="nav-link @(Model == SubMenuTransacciones.Diario ? "active" : null)" asp-action="Index">Diario</a>
-    </li>
+<div class="submenu-layout">
+    <!-- Izquierda: Botón -->
+    <a asp-action="Crear" class="btn btn-nueva-transaccion">
+        <i class="bi bi-plus-circle-fill me-2"></i> Nueva Transacción
+    </a>
 
-    <li class="nav-item">
-        <a class="nav-link @(Model == SubMenuTransacciones.Semanal ? "active" : null)" asp-action="Semanal">Semanal</a>
-    </li>
+    <!-- Centro: Submenú -->
+    <ul class="nav submenu-transacciones mb-0">
+        <li class="nav-item">
+            <a class="nav-link @(Model == SubMenuTransacciones.Diario ? "active" : null)" asp-action="Index">Diario</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(Model == SubMenuTransacciones.Semanal ? "active" : null)" asp-action="Semanal">Semanal</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(Model == SubMenuTransacciones.Mensual ? "active" : null)" asp-action="Mensual">Mensual</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(Model == SubMenuTransacciones.Excel ? "active" : null)" asp-action="ExcelReporte">Excel</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(Model == SubMenuTransacciones.Calendario ? "active" : null)" asp-action="Calendario">Calendario</a>
+        </li>
+    </ul>
 
-    <li class="nav-item">
-        <a class="nav-link @(Model == SubMenuTransacciones.Mensual ? "active" : null)" asp-action="Mensual">Mensual</a>
-    </li>
+    <!-- Derecha: Espaciador invisible del mismo tamaño que el botón -->
+    <div class="submenu-spacer"></div>
+</div>
 
-    <li class="nav-item">
-        <a class="nav-link @(Model == SubMenuTransacciones.Excel ? "active" : null)" asp-action="ExcelReporte">Excel</a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link @(Model == SubMenuTransacciones.Calendario ? "active" : null)" asp-action="Calendario">Calendario</a>
-    </li>
-</ul>

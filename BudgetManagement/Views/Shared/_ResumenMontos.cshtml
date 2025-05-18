@@ -1,12 +1,19 @@
 @model ResumenMontoViewModel
 
-<div class="contenedor-totales mb-3">
+@{
+    string FomatearBalance(decimal balance)
+    {
+        return Math.Abs(balance).ToString("N");
+    }
+}
+
+<div class="contenedor-totales">
     <div>
         <div>
             <strong>Depositos</strong>
         </div>
         <div class="activo">
-            @Model.Ingresos.ToString("N")
+            $@Model.Ingresos.ToString("N")
         </div>
     </div>
 
@@ -15,7 +22,7 @@
             <strong>Retiros</strong>
         </div>
         <div class="pasivo">
-            @Model.Gastos.ToString("N")
+            $@FomatearBalance(Model.Gastos)
         </div>
     </div>
 
@@ -23,8 +30,8 @@
         <div>
             <strong>Total</strong>
         </div>
-        <div>
-            @Model.Total.ToString("N")
+        <div class="total">
+            @(Model.Total < 0 ? "-$" + Math.Abs(Model.Total).ToString("N") : "$" + Model.Total.ToString("N"))
         </div>
     </div>
 </div>

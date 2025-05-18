@@ -1,0 +1,80 @@
+.login-card {
+    width: 100%;
+    min-height: 400px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(124, 58, 237, 0.20);
+    transition: all 0.3s ease;
+}
+
+.login-card .card-body {
+    padding: 1.5rem 2.5rem 2.5rem;
+}
+
+.login-card-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(124, 58, 237, 0.1);
+}
+
+.login-card .form-control {
+    height: 45px;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+.login-card .btn {
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+}
+
+.login-card .btn-primary {
+    background-color: #7C3AED;
+    border: none;
+}
+
+.login-card .btn-primary:hover {
+    background-color: #5B21B6;
+}
+
+.login-card .btn-success {
+    background-color: #16A34A;
+    border: none;
+}
+
+.login-card .btn-success:hover {
+    background-color: #15803d;
+}
+
+.login-card .btn-link {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #6B7280;
+}
+
+.login-card .btn-link:hover {
+    text-decoration: underline;
+}
+
+.auth-link {
+    font-size: 0.95rem;
+    color: #7C3AED;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-link:hover {
+    text-decoration: underline;
+    color: #5B21B6;
+}
+
+.register-card {
+    min-height: 440px; /* opcional para compensar altura visual */
+}

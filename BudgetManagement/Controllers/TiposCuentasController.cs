@@ -16,7 +16,7 @@ public class TiposCuentasController : Controller
         _servicioUsuarios = servicioUsuarios;
     }
 
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> TiposCuentas()
     {
         var usuarioId = _servicioUsuarios.ObtenerUsuarioId();
         var tiposCuentas = await _repositorioTiposCuentas.Obtener(usuarioId);
@@ -49,7 +49,7 @@ public class TiposCuentasController : Controller
 
         await _repositorioTiposCuentas.Crear(tipoCuenta);
 
-        return RedirectToAction("Index");
+        return RedirectToAction("TiposCuentas");
     }
 
     [HttpPost]
@@ -64,7 +64,7 @@ public class TiposCuentasController : Controller
         }
 
         await _repositorioTiposCuentas.Actualizar(tipoCuenta);
-        return RedirectToAction("Index");
+        return RedirectToAction("TiposCuentas");
     }
 
     [HttpGet]
@@ -120,7 +120,7 @@ public class TiposCuentasController : Controller
         }
 
         await _repositorioTiposCuentas.Borrar(id);
-        return RedirectToAction("Index");
+        return RedirectToAction("TiposCuentas");
     }
 
     [HttpPost]

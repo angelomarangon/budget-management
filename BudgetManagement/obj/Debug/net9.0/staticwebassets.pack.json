@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/obj/Debug/net9.0/scopedcss/projectbundle/BudgetManagement.bundle.scp.css",
-      "PackagePath": "staticwebassets/BudgetManagement.22sty67l65.bundle.scp.css"
+      "PackagePath": "staticwebassets/BudgetManagement.gcz537k3bf.bundle.scp.css"
     },
     {
       "Id": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/css/custom.css",
@@ -15,6 +15,34 @@
     {
       "Id": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/img/BudgetM.svg",
+      "PackagePath": "staticwebassets/img/BudgetM.svg"
+    },
+    {
+      "Id": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/img/borrarCat.svg",
+      "PackagePath": "staticwebassets/img/borrarCat.svg"
+    },
+    {
+      "Id": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/img/crearCat.svg",
+      "PackagePath": "staticwebassets/img/crearCat.svg"
+    },
+    {
+      "Id": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/img/descargar.svg",
+      "PackagePath": "staticwebassets/img/descargar.svg"
+    },
+    {
+      "Id": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/img/edicatCat.svg",
+      "PackagePath": "staticwebassets/img/edicatCat.svg"
+    },
+    {
+      "Id": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/img/noDatos.svg",
+      "PackagePath": "staticwebassets/img/noDatos.svg"
+    },
+    {
+      "Id": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/img/tipoCuent.svg",
+      "PackagePath": "staticwebassets/img/tipoCuent.svg"
     },
     {
       "Id": "/Users/angelomarangon/Desktop/CSharp/BudgetManagement/BudgetManagement/wwwroot/js/FormularioTransacciones.js",

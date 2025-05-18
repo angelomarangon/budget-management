@@ -1,13 +1,17 @@
 @model DateTime
 
-<h4>
-    <a asp-route-mes="@ViewBag.MesAnterior" asp-route-anio="@ViewBag.AnioAnterior" class="btn btn-secondary">
-        <i class="bi-chevron-left"></i>
+<div class="d-flex justify-content-center align-items-center nav-mes">
+    <a asp-route-mes="@ViewBag.MesAnterior" asp-route-anio="@ViewBag.AnioAnterior" class="btn btn-nav">
+        <i class="bi bi-chevron-left"></i>
     </a>
 
-    @Model.ToString("MMM")-@Model.Year
+    <span class="month-year mx-4">
+        @Model.ToString("MMM yyyy")
+    </span>
 
-    <a asp-route-mes="@ViewBag.MesPosterior" asp-route-anio="@ViewBag.AnioPosterior" class="btn btn-secondary">
-        <i class="bi-chevron-right"></i>
+    <a asp-route-mes="@ViewBag.MesPosterior" asp-route-anio="@ViewBag.AnioPosterior" class="btn btn-nav">
+        <i class="bi bi-chevron-right"></i>
     </a>
-</h4>
+</div>
+
+

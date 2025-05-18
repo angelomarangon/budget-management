@@ -1,0 +1,51 @@
+/* login.css */
+
+
+.login-body {
+    margin: 0;
+    background-color: #f9fafb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem;
+}
+
+.login-illustration {
+    width: 300px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.login-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+    font-size: 1.15rem;
+    color: #6b7280;
+}
+
+
+
+.auth-card {
+    width: 100%;
+    max-width: 400px;
+    /*background-color: #ffffff;*/
+    /*border: none;*/
+    /*border-radius: 20px;*/
+    /*box-shadow: 0 8px 30px rgba(124, 58, 237, 0.15);*/
+    /*transition: all 0.3s ease;*/
+}
+
+.auth-card .card-body {
+    /*padding: 2.5rem;*/
+}

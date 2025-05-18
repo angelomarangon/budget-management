@@ -10,43 +10,76 @@
         Ingresos = Model.Ingresos,
         Total = Model.Total
     };
+    
+    string FomatearBalance(decimal balance)
+    {
+        return Math.Abs(balance).ToString("N");
+    }
 }
 
 <partial name="_SubMenu" model="SubMenuTransacciones.Mensual"/>
 
-<h4>
-    Mostrando transacciones de 
-    <a asp-route-anio="@anioAnterior" class="btn btn-secondary">
-        <i class="bi-chevron-left"></i>
+<div class="anio-selector d-flex align-items-center justify-content-center gap-3 mb-4">
+    <a asp-route-anio="@anioAnterior" class="anio-btn">
+        <i class="bi bi-chevron-left"></i>
     </a>
-    @Model.Anio
-    <a asp-route-anio="@anioPosterior" class="btn btn-secondary">
-        <i class="bi-chevron-right"></i>
+    <span class="anio-text">@Model.Anio</span>
+    <a asp-route-anio="@anioPosterior" class="anio-btn">
+        <i class="bi bi-chevron-right"></i>
     </a>
-</h4>
+</div>
 
 <partial name="_ResumenMontos" model="@resumenMontos"/>
 
-<table class="table">
-    <thead>
-    <tr style="background-color: lightblue">
+<table class="table tabla-mensual">
+    <thead class="encabezado-tabla">
+    <tr>
         <th>Mes</th>
-        <th style="text-align: right">Ingresos</th>
-        <th style="text-align: right">Gastos</th>
+        <th class="text-end">Ingresos</th>
+        <th class="text-end">Gastos</th>
     </tr>
     </thead>
     <tbody>
-    @foreach (var transaccionPorMes in Model.TransaccionesPorMes)
+    @foreach (var transaccionPorMes in Model.TransaccionesPorMes.OrderBy(m => m.Mes))
     {
-        <tr>
+        var hayTransacciones = transaccionPorMes.Ingresos > 0 || transaccionPorMes.Gastos > 0;
+        <tr class="@(hayTransacciones ? "fila-activa" : "")">
             <td>
-                <a style="text-decoration: none" asp-action="Index" asp-route-anio="@Model.Anio" asp-route-mes="@transaccionPorMes.Mes">
-                    @transaccionPorMes.FechaReferencia.ToString("MMM")
+                <a asp-action="Index"
+                   asp-route-anio="@Model.Anio"
+                   asp-route-mes="@transaccionPorMes.Mes"
+                   class="badge-mes">
+                    <i class="bi bi-calendar-event me-2"></i>
+                    @transaccionPorMes.FechaReferencia.ToString("MMMM")
                 </a>
             </td>
-            <td class="activo" style="text-align: right">@transaccionPorMes.Ingresos</td>
-            <td class="pasivo" style="text-align: right">@transaccionPorMes.Gastos</td>
+            <td class="text-end activo">@FomatearBalance(transaccionPorMes.Ingresos)</td>
+            <td class="text-end pasivo">@FomatearBalance(transaccionPorMes.Gastos)</td>
         </tr>
     }
     </tbody>
 </table>
+
+@* <table class="table"> *@
+@*     <thead> *@
+@*     <tr style="background-color: lightblue"> *@
+@*         <th>Mes</th> *@
+@*         <th style="text-align: right">Ingresos</th> *@
+@*         <th style="text-align: right">Gastos</th> *@
+@*     </tr> *@
+@*     </thead> *@
+@*     <tbody> *@
+@*     @foreach (var transaccionPorMes in Model.TransaccionesPorMes) *@
+@*     { *@
+@*         <tr> *@
+@*             <td> *@
+@*                 <a style="text-decoration: none" asp-action="Index" asp-route-anio="@Model.Anio" asp-route-mes="@transaccionPorMes.Mes"> *@
+@*                     @transaccionPorMes.FechaReferencia.ToString("MMM") *@
+@*                 </a> *@
+@*             </td> *@
+@*             <td class="activo" style="text-align: right">@FomatearBalance(transaccionPorMes.Ingresos)</td> *@
+@*             <td class="pasivo" style="text-align: right">@FomatearBalance(transaccionPorMes.Gastos)</td> *@
+@*         </tr> *@
+@*     } *@
+@*     </tbody> *@
+@* </table> *@

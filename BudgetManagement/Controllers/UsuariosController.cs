@@ -17,7 +17,7 @@ public class UsuariosController : Controller
     private readonly IServicioEmail _servicioEmail;
 
     public UsuariosController(
-        UserManager<Usuario> userManager, 
+        UserManager<Usuario> userManager,
         SignInManager<Usuario> signInManager,
         IServicioEmail servicioEmail)
     {
@@ -56,7 +56,7 @@ public class UsuariosController : Controller
             {
                 ModelState.AddModelError(string.Empty, error.Description);
             }
-            
+
             return View(modelo);
         }
     }
@@ -76,25 +76,32 @@ public class UsuariosController : Controller
 
         return View();
     }
-    
+
     [HttpPost]
     [AllowAnonymous]
     public async Task<IActionResult> OlvideMiPassword(OlvideMiPasswordViewModel modelo)
     {
-        var mensaje = "Proceso concluido. Si el email dado se corresponde con uno de nuestros usuarios, en su bandeja de entrada podra encontrar las instrucciones para recuperar su contraseña.";
-        
+        if (!ModelState.IsValid)
+        {
+            return View(modelo);
+        }
+
+        var mensaje =
+            "Hemos enviado un enlace a tu correo electrónico.<br/>Si la dirección proporcionada corresponde a una cuenta registrada, recibirás instrucciones para restablecer tu contraseña.";
+
         ViewBag.Mensaje = mensaje;
         ModelState.Clear();
-        
+
         var usuario = await _userManager.FindByEmailAsync(modelo.Email);
         if (usuario is null)
         {
             return View();
         }
-        
+
         var codigo = await _userManager.GeneratePasswordResetTokenAsync(usuario);
         var codigoBase64 = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(codigo));
-        var enlace = Url.Action("RecuperarPassword", "Usuarios", new {codigo = codigoBase64}, protocol: Request.Scheme);
+        var enlace = Url.Action("RecuperarPassword", "Usuarios", new { codigo = codigoBase64 },
+            protocol: Request.Scheme);
 
         await _servicioEmail.EnviarEmailCambioPassword(modelo.Email, enlace);
         return View();
@@ -134,7 +141,7 @@ public class UsuariosController : Controller
             var usuarioIdReal = claims.Where(x => x.Type == ClaimTypes.NameIdentifier).FirstOrDefault();
             var id = usuarioIdReal!.Value;
         }
-        
+
         return View();
     }
 
@@ -150,7 +157,7 @@ public class UsuariosController : Controller
 
         var modelo = new RecuperarPasswordViewModel();
         modelo.CodigoReseteo = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(codigo));
-        
+
         return View(modelo);
     }
 
@@ -158,13 +165,18 @@ public class UsuariosController : Controller
     [AllowAnonymous]
     public async Task<IActionResult> RecuperarPassword(RecuperarPasswordViewModel modelo)
     {
+        if (!ModelState.IsValid)
+        {
+            return View(modelo);
+        }
+        
         var usuario = await _userManager.FindByEmailAsync(modelo.Email);
         if (usuario is null)
         {
             return RedirectToAction("PasswordCambiado");
         }
-        
-        var resultado = await _userManager.ResetPasswordAsync(usuario, modelo.CodigoReseteo, modelo.Password);
+
+        var resultados = await _userManager.ResetPasswordAsync(usuario, modelo.CodigoReseteo, modelo.Password);
 
         return RedirectToAction("PasswordCambiado");
     }

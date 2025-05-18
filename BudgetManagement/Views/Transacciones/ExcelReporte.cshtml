@@ -12,35 +12,96 @@
 
 <partial name="_SubMenu" model="SubMenuTransacciones.Excel"/>
 
+<section class="exportar-seccion">
+    <h1 class="titulo">Exportar transacciones</h1>
+    <p class="subtitulo">Selecciona el período que deseas descargar en formato Excel.</p>
 
-<h1>Exportar Transacciones a Excel</h1>
+    <div class="tarjetas-exportacion">
+        <div class="tarjeta">
+            <div class="contenido">
+                <h5>Mes actual</h5>
+                <p>@hoy.ToString("MMMM yyyy")</p>
+            </div>
+            <a asp-action="ExportarExcelPorMes" asp-route-mes="@mesActual" asp-route-anio="@anioActual" class="btn-excel">
+                <i class="bi bi-file-earmark-spreadsheet-fill me-2"></i> Descargar
+            </a>
+        </div>
 
-<div class="mb-3">
-    <a asp-action="ExportarExcelPorMes" asp-route-mes="@mesActual" asp-route-anio="@anioActual" class="btn btn-success">
-        Exportar mes actual
-    </a> ~ @hoy.ToString("MMM yyyy")
+        <div class="tarjeta">
+            <div class="contenido">
+                <h5>Mes anterior</h5>
+                <p>@haceUnMes.ToString("MMMM yyyy")</p>
+            </div>
+            <a asp-action="ExportarExcelPorMes" asp-route-mes="@mesAnterior" asp-route-anio="@mesAnteriorAnio" class="btn-excel">
+                <i class="bi bi-file-earmark-spreadsheet-fill me-2"></i> Descargar
+            </a>
+        </div>
+
+        <div class="tarjeta">
+            <div class="contenido">
+                <h5>Año actual</h5>
+                <p>@anioActual</p>
+            </div>
+            <a asp-action="ExportarExcelPorAnio" asp-route-anio="@anioActual" class="btn-excel">
+                <i class="bi bi-file-earmark-spreadsheet-fill me-2"></i> Descargar
+            </a>
+        </div>
+
+        <div class="tarjeta">
+            <div class="contenido">
+                <h5>Año anterior</h5>
+                <p>@anioAnterior</p>
+            </div>
+            <a asp-action="ExportarExcelPorAnio" asp-route-anio="@anioAnterior" class="btn-excel">
+                <i class="bi bi-file-earmark-spreadsheet-fill me-2"></i> Descargar
+            </a>
+        </div>
+
+        <div class="tarjeta">
+            <div class="contenido">
+                <h5>Historial completo</h5>
+                <p>Todos los movimientos</p>
+            </div>
+            <a asp-action="ExportarExcelTodo" class="btn-excel">
+                <i class="bi bi-file-earmark-spreadsheet-fill me-2"></i> Descargar
+            </a>
+        </div>
+    </div>
+</section>
+
+<div class="image-container6">
+    <img src="~/img/descargar.svg" alt="Imagen visual" class="img-fluid"/>
 </div>
 
-<div class="mb-3">
-    <a asp-action="ExportarExcelPorMes" asp-route-mes="@mesAnterior" asp-route-anio="@mesAnteriorAnio" class="btn btn-success">
-        Exportar mes anterior
-    </a> ~ @haceUnMes.ToString("MMM yyyy")
-</div>
 
-<div class="mb-3">
-    <a asp-action="ExportarExcelPorAnio" asp-route-anio="@anioActual" class="btn btn-success">
-        Exportar año actual
-    </a> ~ @anioActual
-</div>
-
-<div class="mb-3">
-    <a asp-action="ExportarExcelPorAnio" asp-route-anio="@anioAnterior" class="btn btn-success">
-        Exportar año anterior
-    </a> ~ @anioAnterior
-</div>
-
-<div class="mb-3">
-    <a asp-action="ExportarExcelTodo" class="btn btn-success">
-        Exportar todo
-    </a>
-</div>
+@* <h1>Exportar Transacciones a Excel</h1> *@
+@* *@
+@* <div class="mb-3"> *@
+@*     <a asp-action="ExportarExcelPorMes" asp-route-mes="@mesActual" asp-route-anio="@anioActual" class="btn btn-success"> *@
+@*         Exportar mes actual *@
+@*     </a> ~ @hoy.ToString("MMM yyyy") *@
+@* </div> *@
+@* *@
+@* <div class="mb-3"> *@
+@*     <a asp-action="ExportarExcelPorMes" asp-route-mes="@mesAnterior" asp-route-anio="@mesAnteriorAnio" class="btn btn-success"> *@
+@*         Exportar mes anterior *@
+@*     </a> ~ @haceUnMes.ToString("MMM yyyy") *@
+@* </div> *@
+@* *@
+@* <div class="mb-3"> *@
+@*     <a asp-action="ExportarExcelPorAnio" asp-route-anio="@anioActual" class="btn btn-success"> *@
+@*         Exportar año actual *@
+@*     </a> ~ @anioActual *@
+@* </div> *@
+@* *@
+@* <div class="mb-3"> *@
+@*     <a asp-action="ExportarExcelPorAnio" asp-route-anio="@anioAnterior" class="btn btn-success"> *@
+@*         Exportar año anterior *@
+@*     </a> ~ @anioAnterior *@
+@* </div> *@
+@* *@
+@* <div class="mb-3"> *@
+@*     <a asp-action="ExportarExcelTodo" class="btn btn-success"> *@
+@*         Exportar todo *@
+@*     </a> *@
+@* </div> *@

@@ -18,7 +18,7 @@ public class CategoriasController:Controller
     }
 
 
-    public async Task<IActionResult> Index(PaginacionViewModel paginacionViewModel)
+    public async Task<IActionResult> Categorias(PaginacionViewModel paginacionViewModel)
     {
         var usuarioId = _servicioUsuarios.ObtenerUsuarioId();
         var categorias = await _repositorioCategorias.Obtener(usuarioId, paginacionViewModel);
@@ -30,7 +30,7 @@ public class CategoriasController:Controller
             Pagina = paginacionViewModel.Pagina,
             RecordsPorPagina = paginacionViewModel.RecordsPorPagina,
             CantidadTotalRecords = totalCategorias,
-            BaseURL = Url.Action()
+            BaseURL = Url.Action("Categorias", "Categorias")
         };
         
         return View(respuestaViewModel);
@@ -54,7 +54,7 @@ public class CategoriasController:Controller
         categoria.UsuarioId = usuarioId;
         await _repositorioCategorias.Crear(categoria);
 
-        return RedirectToAction("Index");
+        return RedirectToAction("Categorias");
     }
 
 
@@ -88,7 +88,7 @@ public class CategoriasController:Controller
         
         categoriaEditar.UsuarioId = usuarioId;
         await _repositorioCategorias.Actualizar(categoriaEditar);
-        return RedirectToAction("Index");
+        return RedirectToAction("Categorias");
     }
 
 
@@ -116,7 +116,7 @@ public class CategoriasController:Controller
         }
 
         await _repositorioCategorias.Borrar(id);
-        return RedirectToAction("Index");
+        return RedirectToAction("Categorias");
     }
 
     

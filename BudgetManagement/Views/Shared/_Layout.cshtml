@@ -1,61 +1,77 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - BudgetManagement</title>
     <script type="importmap"></script>
-    <link rel="stylesheet" href="~/css/custom.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/BudgetManagement.styles.css" asp-append-version="true"/>
+    @* <link rel="stylesheet" href="~/lib/fullcalendar/main.min.css" /> *@
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/custom.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BudgetManagement.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="~/lib/fullcalendar/main.min.css"/>
+    <link rel="stylesheet" href="~/lib/fullcalendar/main.min.css" />
 </head>
-<body>
-<header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" asp-controller="Transacciones" asp-action="Index">BudgetManagement</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Transacciones" asp-action="Index">Transacciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Cuentas" asp-action="Index">Cuentas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="TiposCuentas" asp-action="Index">Tipos de Cuentas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Categorias" asp-action="Index">Categorias</a>
-                    </li>
-                </ul>
-                <partial name="_LinksLogin"/>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand px-3 py-1 rounded" asp-controller="Transacciones" asp-action="Index">BudgetManagement</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link @(currentAction == "Index" ? "active" : "")"
+                               asp-controller="Transacciones" asp-action="Index">Transacciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @(currentAction == "Cuentas" ? "active" : "")" asp-controller="Cuentas"
+                               asp-action="Cuentas">Cuentas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @(currentAction == "TiposCuentas" ? "active" : "")"
+                               asp-controller="TiposCuentas" asp-action="TiposCuentas">Tipos de Cuentas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link @(currentAction == "Categorias" ? "active" : "")"
+                               asp-controller="Categorias" asp-action="Categorias">Categorías</a>
+                        </li>
+                    </ul>
+                    <partial name="_LinksLogin" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="flex-grow-1">
+        <div class="container py-4">
+            @RenderBody()
+        </div>
+    </main>
+
+    <footer class="custom-footer mt-auto">
+        <div class="container d-flex justify-content-between align-items-center py-3 flex-wrap">
+            <div>
+                &copy; 2025 - BudgetManagement. Todos los derechos reservados
+            </div>
+            <div class="footer-icons">
+                <a href="https://linkedin.com/in/tuusuario" target="_blank" title="LinkedIn"><i
+                        class="bi bi-linkedin"></i></a>
+                <a href="mailto:tuemail@correo.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                <a href="https://github.com/tuusuario" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
             </div>
         </div>
-    </nav>
-</header>
-<div class="container">
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
-</div>
+    </footer>
 
-<footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2025 - BudgetManagement - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-    </div>
-</footer>
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/lib/jquery-ui/jquery-ui.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
-@await RenderSectionAsync("Scripts", required: false)
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

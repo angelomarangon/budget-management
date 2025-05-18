@@ -1,0 +1,167 @@
+@* @model IEnumerable<TipoCuenta> *@
+@* *@
+@* @{ *@
+@*     ViewData["Title"] = "Tipos Cuentas"; *@
+@* } *@
+@* *@
+@* <h1>Tipos de Cuentas</h1> *@
+@* <h5>El tipo de cuenta se refiere a como podemos agrupar cuentas. Ejemplo: Prestamos, tarjetas de crédito, etc.</h5> *@
+@* *@
+@* <a asp-action="Crear" class="btn btn-primary mb-3">Crear nuevo</a> *@
+@* *@
+@* <table class="table"> *@
+@*     <thead> *@
+@*         <tr> *@
+@*             <th>Nombre</th> *@
+@*             <th class="text-center" style="width: 180px;">Acciones</th> *@
+@*         </tr> *@
+@*     </thead> *@
+@*     <tbody id="reordenable"> *@
+@*         @foreach (var tipoCuenta in Model) *@
+@*         { *@
+@*             <tr> *@
+@*                 <td>@tipoCuenta.Nombre</td> *@
+@*                 <td class="text-center"> *@
+@*                     <div class="d-flex justify-content-center gap-2"> *@
+@*                         <a class="btn btn-sm btn-outline-primary" asp-action="Editar" asp-route-id="@tipoCuenta.Id">Editar</a> *@
+@*                         <a class="btn btn-sm btn-outline-danger" asp-action="Borrar" asp-route-id="@tipoCuenta.Id">Borrar</a> *@
+@*                     </div> *@
+@*                 </td> *@
+@*             </tr> *@
+@*         } *@
+@*     </tbody> *@
+@* </table> *@
+@* *@
+@* @section Scripts{ *@
+@*     <script> *@
+@*         const urlOrdenar = '@Url.Action("ordenar")'; *@
+@* *@
+@*         // Inicializar el sortable solo para el cuerpo de la tabla *@
+@*         $(function () { *@
+@*             $("#reordenable").sortable({ *@
+@*                 items: "tr", // Asegura que solo las filas sean arrastrables *@
+@*                 stop: async function (e, ui) { *@
+@*                     await actualizarOrdenes(); *@
+@*                 } *@
+@*             }); *@
+@* *@
+@*             async function actualizarOrdenes() { *@
+@*                 const ids = obtenerIdsDeElementos();   *@
+@*                 await enviarIdsAlBackend(ids); *@
+@*             } *@
+@* *@
+@*             function obtenerIdsDeElementos() { *@
+@*                 const ids = $(".ids").map(function (){ *@
+@*                     return $(this).val(); *@
+@*                 }).get(); *@
+@*                  *@
+@*                 return ids; *@
+@*             } *@
+@* *@
+@*             async function enviarIdsAlBackend(ids) { *@
+@*                 var data = JSON.stringify(ids); *@
+@*                 await fetch(urlOrdenar, { *@
+@*                     method: 'POST', *@
+@*                     body: data, *@
+@*                     headers: { 'Content-Type': 'application/json' } *@
+@*                 }); *@
+@*             } *@
+@*         }); *@
+@*     </script> *@
+@* } *@
+
+
+
+
+@model IEnumerable<TipoCuenta>
+
+@{
+    ViewData["Title"] = "Tipos Cuentas";
+}
+
+<div class="categoria-wrapper py-4">
+    <div class="d-flex justify-content-between align-items-start mb-4">
+        <div>
+            <h1 class="fw-bold mb-1">Tipos de Cuentas</h1>
+            <p class="text-muted">El tipo de cuenta se refiere a como podemos agrupar cuentas.
+                Ejemplo: Prestamos, tarjetas de credito, etc.
+            </p>
+        </div>
+
+        <a asp-action="Crear" class="btn btn-categoria">
+            <i class="bi bi-plus-circle me-1"></i> Crear nuevo
+        </a>
+    </div>
+
+    <table class="table custom-table align-middle">
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th class="text-center" style="width: 180px;">Acciones</th>
+        </tr>
+        </thead>
+        <tbody id="reordenable">
+        @foreach (var tipoCuenta in Model)
+        {
+            <tr>
+                <td>@tipoCuenta.Nombre</td>
+                <td>
+                    <div class="d-flex justify-content-center gap-2 translusido">
+                        <input type="hidden" value="@tipoCuenta.Id" class="ids" />
+                        <a class="btn btn-sm btn-outline-primary d-flex align-items-center gap-1"
+                           asp-action="Editar" asp-route-id="@tipoCuenta.Id">
+                            <i class="bi bi-pencil-fill"></i> Editar
+                        </a>
+                        @* <a class="btn btn-primary" asp-action="Editar" asp-route-id="@tipoCuenta.Id">Editar</a> *@
+                        <a class="btn btn-sm btn-outline-danger d-flex align-items-center gap-1"
+                           asp-action="Borrar" asp-route-id="@tipoCuenta.Id">
+                            <i class="bi bi-trash-fill"></i> Borrar
+                        </a>
+                        @* <a class="btn btn-danger" asp-action="Borrar" asp-route-id="@tipoCuenta.Id">Borrar</a> *@
+                    </div>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+<div class="image-container2">
+    <img src="~/img/tipoCuent.svg" alt="Imagen visual" class="img-fluid"/>
+</div>
+
+@section Scripts{
+    <script>
+        const urlOrdenar = '@Url.Action("ordenar")';
+        $(function () {
+            $("#reordenable").sortable({
+                stop: async function (e, ui) {
+                    await actualizarOrdenes();
+                }
+            });
+
+            async function actualizarOrdenes() {
+                const ids = obtenerIdsDeElementos();
+                await enviarIdsAlBackend(ids);
+            }
+
+            function obtenerIdsDeElementos() {
+                const ids = $(".ids").map(function () {
+                    return $(this).val();
+                }).get();
+
+                return ids;
+            }
+
+            async function enviarIdsAlBackend(ids) {
+                var data = JSON.stringify(ids);
+                await fetch(urlOrdenar, {
+                    method: 'POST',
+                    body: data,
+                    headers: {'Content-Type': 'application/json'}
+                })
+            }
+        });
+
+    </script>
+}

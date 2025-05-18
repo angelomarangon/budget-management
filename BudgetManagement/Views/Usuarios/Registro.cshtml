@@ -5,29 +5,34 @@
 }
 
 
-<h1>Registrate</h1>
 
-<div class="card">
+<div class="card login-card">
+    <h1 class="login-card-title mt-4">Crear cuenta</h1>
     <div class="card-body">
         <form asp-action="Registro">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="mb-3">
-                <label asp-for="Email" class="form-label"></label>
+                <label asp-for="Email"></label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
 
             <div class="mb-3">
-                <label asp-for="Password" class="form-label"></label>
+                <label asp-for="Password"></label>
                 <input asp-for="Password" type="password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
 
-            <button class="btn btn-primary">Registrate</button>
-            <a class="btn btn-success" asp-action="Login">Deseo Loguearme</a>
-        </form>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
+            <div class="d-grid mt-4">
+                <button class="btn btn-primary w-100">Registrarme</button>
+            </div>
+
+            <div class="text-center mt-3">
+                <a asp-action="Login" class="auth-link">¿Ya tienes una cuenta?</a>
+            </div>
+        </form>
     </div>
 </div>
 

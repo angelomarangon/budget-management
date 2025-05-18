@@ -3,23 +3,39 @@
 @{
     ViewData["Title"] = "Editar Tipo Cuenta";
 }
+<div class="container-fluid">
+    <div class="row justify-content-center py-5">
+        <div class="col-md-6">
+            <h1 class="text-center mb-4">Editar tipo de cuenta: <strong
+                    style="color: #6f42c1;">@Model.Nombre</strong>
+            </h1>
+            <h5 class="text-muted text-center mb-4">Modifica el tipo de cuenta para organizar tus finanzas de manera más
+                eficiente, como: efectivo, tarjetas de crédito, préstamos, entre otros.</h5>
 
-<h1>Editar Tipo Cuenta: @Model.Nombre</h1>
 
-<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <form asp-controller="TiposCuentas" asp-action="Editar">
 
-<form asp-controller="TiposCuentas" asp-action="Editar">
-    <input type="hidden" asp-for="Id"/>
-    <div class="mb-3">
-        <label asp-for="Nombre" class="form-label"></label>
-        <input type="text" class="form-control" asp-for="Nombre"/>
-        <span asp-validation-for="Nombre" class="text-danger"></span>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <input type="hidden" asp-for="Id" />
+                <div class="mb-3">
+                    <label asp-for="Nombre" class="form-label"></label>
+                    <input type="text" class="form-control" asp-for="Nombre" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-primary">Editar</button>
+                    <a class="btn btn-secondary" asp-action="TiposCuentas">Cancelar</a>
+                </div>
+            </form>
+        </div>
     </div>
+</div>
 
-    <button type="submit" class="btn btn-primary">Enviar</button>
-    <a class="btn btn-secondary" asp-action="Index">Cancelar</a>
-</form>
-
+<div class="image-container2">
+    <img src="~/img/edicatCat.svg" alt="Imagen visual" class="img-fluid" />
+</div>
 
 @section Scripts{
     <partial name="_ValidationScriptsPartial" />

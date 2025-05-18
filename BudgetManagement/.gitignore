@@ -1,0 +1,46 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Rider
+.idea/
+*.sln.iml
+
+# Archivos de compilación
+bin/
+obj/
+
+# Archivos de publicación
+publish/
+*.user
+*.lock.json
+*.dbmdl
+
+# Configuración temporal
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs y depuración
+*.log
+
+# Archivos de Rider
+*.DotSettings
+.idea/
+
+# Archivos de entorno
+.env
+secrets.json
+
+# Archivos generados por VS Code (por si usas también)
+.vscode/
+
+# Carpeta de paquetes (por si no usas restore externo)
+packages/
+
+# Archivos específicos de ASP.NET Core
+wwwroot/lib/
+
+# Backup de pgAdmin u otros SQL temporales (por si los colocas en la raíz)
+*.bak
+*.sql

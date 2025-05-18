@@ -31,7 +31,7 @@ public class CuentasController : Controller
         _mapper = mapper;
     }
 
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> Cuentas()
     {
         var usuarioId = _servicioUsuarios.ObtenerUsuarioId();
         var cuentasConTipoCuenta = await _repositorioCuentas.Buscar(usuarioId);
@@ -93,7 +93,7 @@ public class CuentasController : Controller
         }
 
         await _repositorioCuentas.Crear(cuenta);
-        return RedirectToAction("Index");
+        return RedirectToAction("Cuentas");
     }
 
     [HttpPost]
@@ -114,7 +114,7 @@ public class CuentasController : Controller
         }
 
         await _repositorioCuentas.Actualizar(cuentaEditar);
-        return RedirectToAction("Index");
+        return RedirectToAction("Cuentas");
     }
 
 
@@ -157,7 +157,7 @@ public class CuentasController : Controller
         }
         
         await _repositorioCuentas.Borrar(id);
-        return RedirectToAction("Index");
+        return RedirectToAction("Cuentas");
     }
         
     private async Task<IEnumerable<SelectListItem>> ObtenerTipoCuentas(int usuarioId)

@@ -2,39 +2,904 @@
     cursor: move;
 }
 
+/* Diseño para la sección de totales */
 .contenedor-totales {
     display: flex;
     justify-content: space-around;
-    font-size: 26px;
+    font-size: 22px;
     text-align: center;
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin-bottom: 40px;
 }
 
 .activo {
-    color: blue;
-    --bs-table-color: blue;
+    color: #28a745; /* Color verde para activos */
+    --bs-table-color: #28a745;
+    font-weight: bold;
 }
 
 .pasivo {
-    color: red;
-    --bs-table-color: red;
+    color: #dc3545; /* Color rojo para pasivos */
+    --bs-table-color: #dc3545;
+    font-weight: bold;
 }
 
-.accordion-cuentas {
-    color: black !important;
-    font-size: 20px;
+.total {
+    color: #6f42c1; /* Color violeta para total */
+    font-weight: bold;
 }
 
-.accordion-cuentas button span {
+
+/* Elementos dentro del acordeón */
+.list-group-item {
+    /*background-color: #fafafa;*/
+    padding: 0.75rem;
+    /*border: 1px solid #ddd;*/
+    /*border-radius: 8px;*/
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.2s ease;
+}
+
+.list-group-item:hover {
+    /*background-color: #f1f1f1; !* Sutil hover *!*/
+}
+
+.accordion {
+    --bs-accordion-active-bg: #E0D6FF;
+    
+    --bs-accordion-border-width: none;
+    --bs-accordion-border-color: #6f42c1; /* Violeta suave para un look sofisticado */
+    /*--bs-accordion-focus-box-shadow: 0 0 5px rgba(111, 66, 193, 0.6); !* Sombra de enfoque para un efecto sutil *!*/
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+
+
+/**/
+.accordion-button {
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+    color: #6f42c1;
+    text-align: left;
+}
+
+.accordion-button:hover {
+    background-color: #e9ecef;
+}
+
+.accordion-button .d-flex {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.accordion-cuentas ul li {
-    display: flex;
-    justify-content: space-between;
+.accordion-button .w-50 {
+    width: 50%;
 }
 
-.accordion-cuentas .accordion-collapse{
-    font-size: 18px;
+.accordion-button .text-center {
+    text-align: center;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-button .btn-outline-primary,
+.accordion-button .btn-outline-danger {
+    font-size: 0.875rem;
+    margin-top: 10px;
+}
+
+/* contenido accordion */
+.accordion-body {
+    padding: 15px;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.list-group-item .w-40 {
+    width: 40%;
+}
+
+.list-group-item .w-20 {
+    width: 20%;
+}
+
+.list-group-item .d-flex {
+    display: flex;
+}
+
+.list-group-item .gap-2 {
+    gap: 10px;
+}
+
+.list-group-item .text-end {
+    text-align: right;
+}
+
+.list-group-item a {
+    font-size: 0.875rem;
+}
+
+/* cuenta link */
+.cuenta-link {
+    color: #6f42c1;  /* Color violeta de tu paleta */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: 600; /* Fuente en negrita */
+    transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+.cuenta-link:hover {
+    color: #5a2c8e; /* Tono más oscuro para el hover */
+    text-decoration: underline; /* Subrayado solo en hover para mayor énfasis */
+}
+
+/* Detalles cuenta */
+
+/* navegacion */
+.btn-nav {
+    background-color: transparent;
+    border: none;
+    color: #6f42c1; /* Color violeta de la paleta */
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.btn-nav:hover {
+    background-color: #f0f0f0;
+    color: #5a2c8e;
+    transform: scale(1.1);
+}
+
+.month-year {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #333; /* Gris oscuro para la tipografía */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.month-year:hover {
+    color: #6f42c1;
+}
+
+.nav-mes{
+    margin-bottom: 40px;
+}
+
+/**/
+/* Estilo para la fecha */
+.fecha {
+    font-size: 16px;
+    padding-right: 5px;
+    font-weight: bold;
+    color: #6F42C1; /* Purple color from your palette */
+}
+
+/* Estilo para el badge de la fecha */
+.badge.bg-purple {
+    background-color: #6F42C1;
+    color: white;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.lapiz {
+    color: #6f42c1;
+}
+
+.font-balance {
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Layout */
+
+.navbar-brand {
+    background-color: #ffffff;
+    color: #7C3AED;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transform: scale(1.01);
+}
+
+/* Links principales del navbar */
+.custom-navbar .navbar-nav .nav-link {
+    color: white;
+    font-weight: 500;
+    margin-right: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: #ddd6fe;
+    transform: translateY(-2px);
+}
+
+.custom-navbar .navbar-nav .nav-link.active {
+    color: #e0e7ff;
+}
+
+.custom-navbar .navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #e0e7ff;
+}
+
+/* Footer */
+.custom-footer {
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+    font-size: 0.9rem;
+    color: #6b7280;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.custom-footer a {
+    color: #7C3AED;
+    text-decoration: none;
+}
+
+.custom-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-icons a {
+    margin-left: 15px;
+    font-size: 1.3rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-icons a:hover {
+    color: #5B21B6;
+    transform: scale(1.15);
+}
+
+
+
+
+
+
+
+
+/* CATEGORIAS */
+
+.categoria-wrapper h1:first-child {
+    margin-top: 0;
+}
+
+.btn-categoria {
+    background-color: #7C3AED;
+    color: white;
+}
+.btn-categoria:hover {
+    background-color: white;
+    border: 1.5px solid #7C3AED;
+    color: #7C3AED;
+}
+
+.custom-table {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.custom-table th {
+    background-color: #E0D6FF; /* Violeta suave */
+    color: #6F42C1; /* Color de texto más oscuro para contraste */
+    font-weight: 600;
+    border: none;
+    padding: 1rem;
+}
+
+.custom-table th, .custom-table td {
+    vertical-align: middle;
+}
+
+.custom-table td {
+    border-top: 1px solid #f0f0f0;
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+.custom-table tbody tr:hover {
+    /*background-color: #f9f9ff;*/
+    background-color: rgba(249, 249, 255, 0.8);
+}
+
+
+.btn-outline-primary {
+    border-color: #6f42c1;
+    color: #6f42c1;
+}
+.btn-outline-primary:hover {
+    background-color: #6f42c1;
+    color: white;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* paginacion categoria */
+/* Paginación */
+.pagination .page-item.disabled .page-link {
+    color: #d1d1d1; /* Gris suave para los botones deshabilitados */
+    pointer-events: none;
+    background-color: #f9fafb; /* Fondo gris claro */
+    border: 1px solid #d1d1d1;
+}
+
+.pagination .page-item.active .page-link {
+    color: white;
+    background-color: #6F42C1; /* Violeta de tu paleta */
+    border-color: #6F42C1;
+}
+
+.pagination .page-item .page-link {
+    color: #6F42C1; /* Violeta claro para los botones normales */
+    background-color: transparent;
+    border: 1px solid #6F42C1;
+}
+
+.pagination .page-item .page-link:hover {
+    color: white;
+    background-color: #6F42C1; /* Hover sobre los botones de paginación */
+}
+
+.pagination .page-item .page-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.1rem rgba(111, 66, 193, 0.5); /* Brillo cuando el botón tiene foco */
+}
+
+
+
+/* Crear categoria*/
+
+/* Botón Primario */
+/* Botón Primario */
+.btn-primary {
+    background-color: #9b66d1; /* Violeta más suave */
+    border-color: #9b66d1; /* Mismo color para el borde */
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transición suave */
+    text-transform: capitalize;
+}
+
+.btn-primary:hover {
+    background-color: #5B21B6;
+    border: 1px solid #7C3AED;
+    color: white;
+  
+}
+
+/* Botón Secundario */
+.btn-secondary {
+    background-color: rgba(240, 240, 240, 0.7); /* Fondo con transparencia */
+    border-color: #6f42c1;
+    color: #6f42c1;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    backdrop-filter: blur(5px); /* Efecto de desenfoque en el fondo */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transición suave */
+}
+
+.btn-secondary:hover {
+    background-color: rgba(221, 221, 221, 0.7); /* Fondo con transparencia para el hover */
+    color: #5B21B6;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+
+/* Ajustes en el formulario */
+.form-label {
+    font-weight: 600;
+    color: #6f42c1;
+}
+
+input.form-control, select.form-select {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    
+}
+
+input.form-control:focus, select.form-select:focus {
+    border-color: #6f42c1;
+    box-shadow: 0 0 0 0.25rem rgba(111, 66, 193, 0.25);
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    position: absolute;
+    bottom: -5%; 
+    right: 0;
+    width: 50%; 
+    height: auto;
+    z-index: -1; 
+}
+
+.image-container2 {
+    position: absolute;
+    bottom: 5%; 
+    left: 3%;
+    width: 40%; 
+    height: auto; 
+    z-index: -1; 
+}
+
+.image-container3 {
+    position: absolute;
+    bottom: 2%; 
+    left: 45%;
+    width: 50%; 
+    height: auto; 
+    z-index: -1; 
+}
+
+.image-container4 {
+    position: absolute;
+    bottom: 5%; 
+    right: 38%;
+    width: 25%; 
+    height: auto; 
+    z-index: -1; 
+}
+
+.image-container5 {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    width: 28%;
+    height: auto;
+    z-index: -1;
+}
+
+.image-container6 {
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    width: 32%;
+    height: auto;
+    z-index: -1;
+}
+
+/* Imagen */
+.image-container img, 
+.image-container2 img, 
+.image-container3 img, 
+.image-container4 img,
+.image-container5 img,
+.image-container6 img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+
+
+
+/* Transacciones */
+.submenu-transacciones {
+    display: flex;
+    /*justify-content: center;*/
+    gap: 2.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(124, 58, 237, 0.05);
+}
+
+.submenu-transacciones .nav-link {
+    color: #7C3AED;
+    font-weight: 600;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.7rem;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.submenu-transacciones .nav-link:hover {
+    background-color: rgba(124, 58, 237, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(124, 58, 237, 0.15);
+}
+
+.submenu-transacciones .nav-link.active {
+    background-color: #7C3AED;
+    color: white !important;
+    box-shadow: 0 3px 10px rgba(124, 58, 237, 0.3);
+}
+
+.submenu-transacciones {
+    display: flex;
+    gap: 2.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: #ede9fe;
+    box-shadow: 0 4px 10px rgba(124, 58, 237, 0.05);
+    width: auto;
+}
+
+/* boton nueva transaccion */
+.btn-nueva-transaccion {
+    background-color: #7C3AED; /* color principal más vibrante */
+    color: white;
+    font-weight: 600;
+    padding: 0.65rem 1.4rem;
+    font-size: 0.95rem;
+    border: 0.5px solid transparent;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 24px rgba(124, 58, 237, 0.25);
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-nueva-transaccion:hover {
+    background-color: #f5f3ff;
+    color: #7C3AED;
+    border: 0.5px solid #7C3AED;
+    transform: translateY(-2px);
+}
+
+
+.submenu-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.submenu-spacer {
+    width: 190px; /* mismo ancho visual del botón para equilibrar */
+    height: 1px; /* no ocupa alto */
+}
+
+
+/* Seccion Semanal */
+.tabla-semanal {
+    background-color: rgba(255, 255, 255, 0.8);
+    /*border-radius: 10px;*/
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+    width: 100%;
+}
+
+.tabla-semanal thead th {
+    background-color: #E0D6FF; /* Violeta suave */
+    color: #6F42C1; /* Color de texto más oscuro para contraste */
+    font-weight: 600;
+    border: none;
+    padding: 1rem;
+}
+
+.tabla-semanal tbody tr {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tabla-semanal tbody tr:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);
+}
+
+.tabla-semanal td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-top: none;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.tabla-semanal .semana-link {
+    color: #7C3AED;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.tabla-semanal .semana-link:hover {
+    color: #5B21B6;
+    text-decoration: underline;
+}
+
+.tabla-semanal .ingreso {
+    color: #22c55e;
+    font-weight: 600;
+}
+
+.tabla-semanal .gasto {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.semana-badge {
+    display: inline-block;
+    background-color: #ede9fe;
+    color: #7C3AED;
+    font-weight: 600;
+    padding: 0.45rem 1rem;
+    border-radius: 1.2rem;
+    font-size: 0.95rem;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(124, 58, 237, 0.1);
+}
+
+.semana-badge:hover {
+    background-color: #c4b5fd;
+    color: #4c1d95;
+    transform: scale(1.03);
+    text-decoration: none;
+}
+
+
+/* mensual */
+
+.anio-selector {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #1f2937;
+}
+
+.anio-text {
+    background-color: #ede9fe;
+    color: #7C3AED;
+    padding: 0.4rem 1rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 2px 6px rgba(124, 58, 237, 0.1);
+    min-width: 100px;
+    text-align: center;
+}
+
+.anio-btn {
+    background-color: white;
+    color: #7C3AED;
+    border: 1px solid #d8b4fe;
+    border-radius: 0.7rem;
+    padding: 0.4rem 0.7rem;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 1px 4px rgba(124, 58, 237, 0.1);
+}
+
+.anio-btn:hover {
+    background-color: #f5f3ff;
+    color: #5B21B6;
+    transform: scale(1.05);
+}
+
+
+
+/* Encabezado estilizado */
+.encabezado-tabla th {
+    background-color: #E0D6FF; /* Violeta suave */
+    color: #6F42C1;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+}
+
+.tabla-mensual tbody tr {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tabla-mensual tbody tr:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);
+}
+
+/* Badge de mes */
+.badge-mes {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #ede9fe;
+    color: #7C3AED;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 14px rgba(124, 58, 237, 0.15);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-transform: capitalize;
+}
+
+.badge-mes:hover {
+    background-color: #e9d5ff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(124, 58, 237, 0.25);
+    color: #5B21B6;
+}
+
+.badge-mes-link {
+    text-decoration: none;
+}
+
+/* Filas con datos */
+.fila-activa {
+    background-color: #f9f5ff;
+    --bs-table-color: #f9f5ff;
+    transition: background-color 0.3s ease;
+}
+
+.fila-activa:hover {
+    background-color: #f3e8ff;
+}
+
+/* Tabla general */
+.tabla-mensual {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+
+
+/* excel */
+.exportar-seccion {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.exportar-seccion .titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.exportar-seccion .subtitulo {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+.tarjetas-exportacion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    background-color: #ecfdf5;
+    border: 1px solid #d1fae5;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.1);
+}
+
+.tarjeta .contenido h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #065f46;
+    margin-bottom: 0.2rem;
+}
+
+.tarjeta .contenido p {
+    font-size: 0.95rem;
+    color: #047857;
+    margin: 0;
+}
+
+.btn-excel {
+    background-color: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    padding: 0.5rem 1.1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn-excel:hover {
+    background-color: #16a34a;
+    transform: scale(1.03);
+}
+
+
+
+
+/* calendario */
+/*.fc .fc-col-header-cell-cushion,*/
+/*.fc .fc-daygrid-day-number {*/
+/*    text-decoration: none;*/
+/*    color: #7C3AED;*/
+/*    */
+/*}*/
+
+.btn:disabled{
+    background-color: #C4B5FD;
+    border-color: #C4B5FD;
+    color: #5B21B6;
+    font-weight: 600;
+}
+
+
+/* Contenedor del título */
+.fc-toolbar-title {
+    background-color: #f5f3ff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #7C3AED;
+    box-shadow: 0 2px 8px rgba(124, 58, 237, 0.08);
+}
+
+.calendar-container{
+    margin-top: 60px;
 }

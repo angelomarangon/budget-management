@@ -4,22 +4,34 @@
     ViewData["Title"] = "Crear Tipo Cuenta";
 }
 
-<h1>Crear Tipo de Cuenta</h1>
-<h5>El tipo de cuenta se refiere a como podemos agrupar cuentas.
-    Ejemplo: Prestamos, tarjetas de creditos, etc.</h5>
+<div class="container-fluid">
+    <div class="row justify-content-center py-5">
+        <div class="col-md-6">
+            <h1 class="text-center mb-4">Crear <strong style="color: #6f42c1;">Tipo de Cuenta</strong></h1>
+            <h5 class="text-muted text-center mb-4">Defina el tipo de cuenta para organizar mejor sus finanzas, como: préstamos, tarjetas de crédito, entre otros.</h5>
 
-<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-<form asp-controller="TiposCuentas" asp-action="Crear">
-    <div class="mb-3">
-        <label asp-for="Nombre" class="form-label"></label>
-        <input type="text" class="form-control" asp-for="Nombre"/>
-        <span asp-validation-for="Nombre" class="text-danger"></span>
+            <form asp-controller="TiposCuentas" asp-action="Crear">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="mb-3">
+                    <label asp-for="Nombre" class="form-label"></label>
+                    <input type="text" class="form-control" asp-for="Nombre" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-primary">Crear</button>
+                    <a class="btn btn-secondary" asp-action="TiposCuentas">Cancelar</a>
+                </div>
+            </form>
+        </div>
     </div>
-   
-    <button type="submit" class="btn btn-primary">Enviar</button>
-    <a class="btn btn-secondary" asp-action="Index" >Cancelar</a>
-</form>
+</div>
+
+<div class="image-container">
+    <img src="~/img/crearCat.svg" alt="Imagen visual" class="img-fluid"/>
+</div>
 
 
 @section Scripts{

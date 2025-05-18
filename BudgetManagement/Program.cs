@@ -59,6 +59,13 @@ app.UseRequestLocalization(opciones =>
     opciones.DefaultRequestCulture = new RequestCulture(cultura);
 });
 
+builder.Configuration
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
+    .AddUserSecrets<Program>() // Asegúrate de agregar esto
+    .AddEnvironmentVariables();
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
