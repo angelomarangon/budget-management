@@ -21,7 +21,8 @@ public class RepositorioCategorias : IRepositorioCategorias
     
     public RepositorioCategorias(IConfiguration configuracion)
     {
-        connectionString = configuracion.GetConnectionString("DefaultConnection");
+        // connectionString = configuracion.GetConnectionString("DefaultConnection");
+        connectionString = configuracion["POSTGRESQLCONNSTR_DefaultConnection"];
     }
 
     public async Task Crear(Categoria categoria)

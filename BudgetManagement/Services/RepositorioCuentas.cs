@@ -19,7 +19,8 @@ public class RepositorioCuentas : IRepositorioCuentas
 
     public RepositorioCuentas(IConfiguration configuracion)
     {
-        connectionString = configuracion.GetConnectionString("DefaultConnection");
+        // connectionString = configuracion.GetConnectionString("DefaultConnection");
+        connectionString = configuracion["POSTGRESQLCONNSTR_DefaultConnection"];
     }
 
 

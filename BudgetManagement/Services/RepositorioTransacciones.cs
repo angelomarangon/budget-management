@@ -26,7 +26,8 @@ public class RepositorioTransacciones : IRepositorioTransacciones
 
     public RepositorioTransacciones(IConfiguration config)
     {
-        connectionString = config.GetConnectionString("DefaultConnection");
+        // connectionString = config.GetConnectionString("DefaultConnection");
+        connectionString = config["POSTGRESQLCONNSTR_DefaultConnection"];
     }
 
 

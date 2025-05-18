@@ -18,8 +18,10 @@ public class RepositorioUsuarios : IRepositorioUsuarios
     
     public RepositorioUsuarios(IConfiguration config)
     {
-        connectionString = config.GetConnectionString("DefaultConnection");
+        // connectionString = config.GetConnectionString("DefaultConnection");
+        connectionString = config["POSTGRESQLCONNSTR_DefaultConnection"];
     }
+    
 
     public async Task<int> CrearUsuario(Usuario usuario)
     {

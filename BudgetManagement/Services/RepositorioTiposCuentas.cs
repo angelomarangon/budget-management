@@ -21,7 +21,8 @@ public class RepositorioTiposCuentas : IRepositorioTiposCuentas
 
     public RepositorioTiposCuentas(IConfiguration config)
     {
-        connectionString = config.GetConnectionString("DefaultConnection");
+        // connectionString = config.GetConnectionString("DefaultConnection");
+        connectionString = config["POSTGRESQLCONNSTR_DefaultConnection"];
     }
 
     public async Task Crear(TipoCuenta tipoCuenta)
