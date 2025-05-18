@@ -45,7 +45,7 @@ public class ServicioEmail : IServicioEmail
             <p>Si realizaste esta solicitud, haz clic en el siguiente botón para crear una nueva contraseña:</p>
 
             <div style='margin: 2em 0; text-align: left;'>
-                <a href='{{enlace}}'
+                <a href='{enlace}'
                    style='background-color: #8b5cf6; padding: 14px 28px; 
                           border-radius: 10px; display: inline-block; text-decoration: none;'>
                    <span style='color: #ffffff !important; font-weight: bold; font-size: 16px;'>
